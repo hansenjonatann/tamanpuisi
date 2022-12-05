@@ -1,0 +1,158 @@
+body {
+  background-color: #f4f4f4 !important;
+}
+
+div.container-custom {
+  max-width: 1600px;
+}
+
+/* ------------Navbar----------- */
+.navbar-custom {
+  box-shadow: 0 0 10px #888888;
+  background-color: #fff;
+  padding-bottom: 30px !important;
+  padding-top: 30px !important;
+}
+
+.ul-custom li {
+  margin-left: 20px;
+}
+
+.ul-custom li a:hover {
+  color: #39c0de;
+}
+
+input.search-custom:focus {
+  border-color: #39c0de;
+  box-shadow: none;
+}
+
+form button.search-btn-custom {
+  color: #39c0de;
+  border-color: #39c0de;
+}
+
+.search-btn-custom:hover,
+.search-btn-custom:active {
+  border-color: #39c0de !important;
+  background-color: #39c0de !important;
+  color: white !important;
+}
+
+.active-link-custom {
+  color: #39c0de !important;
+}
+
+/* ---------Contact Form------------ */
+#contact-custom {
+  position: relative;
+}
+
+#contact-custom::before {
+  content: "";
+  position: absolute;
+  background-image: url(gambar/wallpapercontact.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  filter: brightness(75%);
+}
+
+.text-contact-custom {
+  position: relative !important;
+  color: white;
+  font-family: Century Gothic;
+  padding-top: 100px;
+  margin-bottom: 40px;
+}
+.text-contact-custom h1 {
+  margin-bottom: 20px;
+}
+.text-contact-custom p {
+  margin-bottom: 20px;
+}
+.text-contact-custom p span {
+  color: #39c0de;
+}
+
+.row-form-custom {
+  margin-top: 80px !important;
+}
+
+.form-contact-custom1,
+.form-contact-custom2 {
+  position: relative;
+  color: white;
+  display: flex !important;
+}
+
+.form-contact-custom1 form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.form-contact-custom1 form input {
+  border-radius: 10px;
+  height: 22%;
+}
+
+.form-contact-custom2 textarea {
+  width: 90%;
+  height: 100%;
+  border-radius: 10px;
+  margin: auto;
+  resize: none;
+}
+
+.btn-custom {
+  width: 100% !important;
+}
+
+.btn-col-custom {
+  position: relative;
+  margin: auto;
+  margin-top: 50px;
+  width: 10%;
+  padding-bottom: 100px;
+}
+
+input,
+textarea {
+  box-shadow: none !important;
+  border: 1px #39c0de !important;
+}
+
+/* --------------- Footer -------------- */
+div.footer-card-custom {
+  border-radius: 0;
+}
+
+div.footer-card-custom img {
+  margin-top: 30px;
+}
+
+div.footer-body-custom {
+  padding: 0;
+}
+
+div.footer-body-custom h5 {
+  margin: 15px 0 20px 0;
+}
+
+div.footer-body-custom p {
+  margin: 0;
+}
+
+.footer-social-media-custom a img {
+  width: 35px;
+  margin: 30px 0 30px 0;
+  cursor: pointer;
+}
+
+div.footer-copyright-custom {
+  border-top-color: white;
+  padding: 20px 0 20px 0;
+}

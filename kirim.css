@@ -1,0 +1,105 @@
+body {
+  background-color: #f4f4f4 !important;
+}
+
+div.container-custom {
+  max-width: 1600px;
+}
+
+/* ------------Navbar----------- */
+.navbar-custom {
+  box-shadow: 0 0 10px #888888;
+  background-color: #fff;
+  padding-bottom: 30px !important;
+  padding-top: 30px !important;
+}
+
+.ul-custom li {
+  margin-left: 20px;
+}
+
+.ul-custom li a:hover {
+  color: #39c0de;
+}
+
+input.search-custom:focus {
+  border-color: #39c0de;
+  box-shadow: none;
+}
+
+form button.btn-custom {
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: var(--bs-body-font-family);
+}
+
+.active-link-custom {
+  color: #39c0de !important;
+}
+
+/* ---------------Kirim Puisi-------------- */
+.sub-title-custom {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  font-family: Century Gothic;
+}
+
+.paragraf-custom {
+  margin-bottom: 40px;
+}
+
+.form-floating.search-btn-custom {
+  color: #39c0de;
+  border-color: #39c0de;
+}
+
+.btn-custom:hover,
+.btn-custom:active {
+  border-color: #39c0de !important;
+  background-color: #39c0de !important;
+  color: white !important;
+}
+
+input,
+select,
+textarea {
+  border-color: #39c0de !important;
+  box-shadow: none !important;
+}
+
+/* --------------- Footer -------------- */
+footer {
+  margin-top: 150px;
+}
+
+div.footer-card-custom {
+  border-radius: 0;
+}
+
+div.footer-card-custom img {
+  margin-top: 30px;
+}
+
+div.footer-body-custom {
+  padding: 0;
+}
+
+div.footer-body-custom h5 {
+  margin: 15px 0 20px 0;
+}
+
+div.footer-body-custom p {
+  margin: 0;
+}
+
+.footer-social-media-custom a img {
+  width: 35px;
+  margin: 30px 0 30px 0;
+  cursor: pointer;
+}
+
+div.footer-copyright-custom {
+  border-top-color: white;
+  padding: 20px 0 20px 0;
+}

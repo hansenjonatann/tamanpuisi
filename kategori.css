@@ -1,0 +1,59 @@
+body {
+  background-color: #f4f4f4 !important;
+  height: 2000px;
+}
+
+div.container-custom {
+  max-width: 1600px;
+}
+
+/* ------------Navbar----------- */
+.navbar-custom {
+  padding-bottom: 30px !important;
+  padding-top: 30px !important;
+  box-shadow: 0 0 10px #888888;
+  background-color: #fff;
+}
+
+.ul-custom li {
+  margin-left: 20px;
+}
+
+.ul-custom li a:hover {
+  color: #39c0de;
+}
+
+input.search-custom:focus {
+  border-color: #39c0de;
+  box-shadow: none;
+}
+
+form button.search-btn-custom {
+  color: #39c0de;
+  border-color: #39c0de;
+}
+
+.search-btn-custom:hover,
+.search-btn-custom:active {
+  border-color: #39c0de !important;
+  background-color: #39c0de !important;
+  color: white !important;
+}
+
+.active-link-custom {
+  color: #39c0de !important;
+}
+
+/* ------------Navbar Kecil----------- */
+.navbar-kecil-custom {
+  background-color: #fff !important;
+  border-top: 1px solid rgb(206, 205, 205);
+  border-bottom: 1px solid rgb(206, 205, 205);
+}
+
+.ul-nav-kecil-custom li {
+  margin-left: 20px;
+}
+.ul-nav-kecil-custom li a:hover {
+  color: #39c0de;
+}

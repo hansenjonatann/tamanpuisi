@@ -1,0 +1,158 @@
+body {
+  background-color: #f4f4f4 !important;
+}
+
+div.container-custom {
+  max-width: 1600px;
+}
+
+/* ------------Navbar----------- */
+.navbar-custom {
+  box-shadow: 0 0 10px #888888;
+  background-color: #fff;
+  padding-bottom: 30px !important;
+  padding-top: 30px !important;
+}
+
+.ul-custom li {
+  margin-left: 20px;
+}
+
+.ul-custom li a:hover {
+  color: #39c0de;
+}
+
+input.search-custom:focus {
+  border-color: #39c0de;
+  box-shadow: none;
+}
+
+form button.search-btn-custom {
+  color: #39c0de;
+  border-color: #39c0de;
+}
+
+.search-btn-custom:hover,
+.search-btn-custom:active {
+  border-color: #39c0de !important;
+  background-color: #39c0de !important;
+  color: white !important;
+}
+
+.active-link-custom {
+  color: #39c0de !important;
+}
+
+/* --------------tentang kami------------ */
+.footer-social-media-custom a img {
+  width: 35px;
+  margin: 30px 0 30px 0;
+  cursor: pointer;
+}
+
+.about-text-custom {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+.about-img-custom img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#tentang-kami-custom {
+  margin-top: 70px;
+}
+
+.btn-about-custom {
+  margin-right: 20px;
+}
+.btn-about-custom a {
+  text-decoration: none;
+  color: white;
+}
+.btn-about-custom a:hover {
+  color: white !important;
+}
+
+/* ----------------Quotes Custom--------- */
+#quotes-custom {
+  background-color: black;
+  margin-top: 100px;
+  margin-bottom: 110px;
+}
+
+.quotes-text-custom {
+  display: flex;
+  color: white;
+  font-family: montserrat;
+  align-items: center !important;
+  flex-wrap: wrap;
+}
+
+.quotes-text-custom {
+  flex-basis: 1;
+}
+
+.quotes-name-custom {
+  align-content: flex-end;
+}
+
+.sub-title-custom {
+  font-family: Century Gothic;
+  margin-bottom: 50px;
+}
+
+.card-custom,
+.card-custom img {
+  border-radius: 10% !important;
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.flex-custom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-custom2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* --------------- Footer -------------- */
+footer {
+  margin-top: 150px;
+}
+
+div.footer-card-custom {
+  border-radius: 0;
+}
+
+div.footer-card-custom img {
+  margin-top: 30px;
+}
+
+div.footer-body-custom {
+  padding: 0;
+}
+
+div.footer-body-custom h5 {
+  margin: 15px 0 20px 0;
+}
+
+div.footer-body-custom p {
+  margin: 0;
+}
+
+.footer-social-media-custom a img {
+  width: 35px;
+  margin: 30px 0 30px 0;
+  cursor: pointer;
+}
+
+div.footer-copyright-custom {
+  border-top-color: white;
+  padding: 20px 0 20px 0;
+}
