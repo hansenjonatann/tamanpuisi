@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Kontak Taman Puisi</title>
+    <title>Taman Puisi | Kirim Puisi</title>
     <link rel="stylesheet" href="kirim.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   </head>
@@ -50,21 +50,21 @@
 <form action="connect.php" method="post">
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Nama Lengkap</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="username">
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="username" required>
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Alamat Email</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" required>
     <div id="emailHelp" class="form-text">Kami tidak akan pernah membagikan email Anda kepada orang lain.</div>
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Nomor Telepon</label>
-    <input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="phonenumber">
+    <input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="phonenumber" required>
     <div id="emailHelp" class="form-text">Kami tidak akan pernah membagikan nomor telepon Anda kepada orang lain.</div>
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Judul Puisi</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="title">
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="title" required>
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Kategori</label>
@@ -85,7 +85,7 @@
     <textarea class="form-control" id="floatingTextarea2" style="height: 100px" name="contents"></textarea>
   </div>
 </div>
-  <button type="submit" class="btn btn-info btn-custom" name="submit" id="btn">Submit</button>
+  <button type="submit" class="btn btn-info btn-custom" name="submit" id="btn">Kirim</button>
 </form>
 </div>
 
