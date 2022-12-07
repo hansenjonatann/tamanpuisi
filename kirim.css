@@ -27,11 +27,16 @@ input.search-custom:focus {
   box-shadow: none;
 }
 
-form button.btn-custom {
-  color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-family: var(--bs-body-font-family);
+form button.search-btn-custom {
+  color: #39c0de;
+  border-color: #39c0de;
+}
+
+.search-btn-custom:hover,
+.search-btn-custom:active {
+  border-color: #39c0de !important;
+  background-color: #39c0de !important;
+  color: white !important;
 }
 
 .active-link-custom {
@@ -102,4 +107,10 @@ div.footer-body-custom p {
 div.footer-copyright-custom {
   border-top-color: white;
   padding: 20px 0 20px 0;
+}
+
+@media only screen and (max-width: 600px) {
+  footer {
+    margin-top: 100px;
+  }
 }

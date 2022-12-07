@@ -6,6 +6,10 @@ div.container-custom {
   max-width: 1600px;
 }
 
+input {
+  border: 1px solid #39c0de !important;
+}
+
 /* ------------Navbar----------- */
 .navbar-custom {
   box-shadow: 0 0 10px #888888;
@@ -91,6 +95,10 @@ form button.search-btn-custom {
   flex-wrap: wrap;
 }
 
+#quotes-custom div div img {
+  width: 100%;
+}
+
 .quotes-text-custom {
   flex-basis: 1;
 }
@@ -99,6 +107,7 @@ form button.search-btn-custom {
   align-content: flex-end;
 }
 
+/* ----------------Our team------------ */
 .sub-title-custom {
   font-family: Century Gothic;
   margin-bottom: 50px;
@@ -155,4 +164,22 @@ div.footer-body-custom p {
 div.footer-copyright-custom {
   border-top-color: white;
   padding: 20px 0 20px 0;
+}
+
+/* ------------Responsive------------- */
+/* -----Responsive Di Card------- */
+@media only screen and (max-width: 600px) {
+  .flex-custom,
+  .flex-custom2 {
+    display: block;
+  }
+
+  .card-custom {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  footer {
+    margin-top: 100px;
+  }
 }
