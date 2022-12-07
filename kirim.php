@@ -1,6 +1,6 @@
 <?php
 
-$conn = mysqli_connect("localhost", "root", "","kirimpuisi");
+$conn = mysqli_connect("127.0.0.1", "root", "","kirimpuisi");
 
 
 $nama_lengkap = $_POST['nama_lengkap'];
