@@ -47,10 +47,10 @@
 <div class="container-md">
   <h1 class="text-center sub-title-custom">Kirim Puisi</h1>
   <p class="text-center paragraf-custom">Isi form dibawah ini untuk mengirimkan puisi-puisi karya anda!</p>
-<form action="connect.php" method="post">
+<form action="kirim.php" method="post">
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Nama Lengkap</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="username" required>
+    <label for="fullname" class="form-label">Nama Lengkap</label>
+    <input type="text" class="form-control" id="fullname" aria-describedby="emailHelp" name="nama_lengkap" required>
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Alamat Email</label>
@@ -59,16 +59,16 @@
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Nomor Telepon</label>
-    <input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="phonenumber" required>
+    <input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="phone" required>
     <div id="emailHelp" class="form-text">Kami tidak akan pernah membagikan nomor telepon Anda kepada orang lain.</div>
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Judul Puisi</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="title" required>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="judul" required>
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Kategori</label>
-  <select class="form-select" aria-label="Default select example" name="category">
+  <select class="form-select" aria-label="Default select example" name="kategori">
     <option value="1">Lainnya</option>
     <option value="2">Balada</option>
     <option value="3">Elegi</option>
@@ -82,7 +82,7 @@
 <div class="mb-3">
   <label for="exampleInputEmail1" class="form-label">Isi Puisi</label>
   <div>
-    <textarea class="form-control" id="floatingTextarea2" style="height: 100px" name="contents"></textarea>
+    <textarea class="form-control" id="floatingTextarea2" style="height: 100px" name="isi"></textarea>
   </div>
 </div>
   <button type="submit" class="btn btn-info btn-custom" name="submit" id="btn">Kirim</button>
