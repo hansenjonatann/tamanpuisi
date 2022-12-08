@@ -80,34 +80,29 @@
             <p><span>Email:</span> Timtigapemograman@gmail.com</p>
             <p><span>Address:</span> Universitas Internasional Batam</p>
           </div>
-          <form>
+          <form action="kontak.php" method="post">
             <div class="row">
               <div class="col-md-6">
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="namapengguna" placeholder="Nama Pengguna">
             </div>
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" placeholder="Email">
+              <div id="emailHelp" class="form-text text-danger fw-bold">Kami tidak pernah memberikan data anda kepada orang lain!</div>
             </div>
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              <input type="tel" class="form-control"  placeholder="Nomor Telepon" name="notelepon">
             </div>
             </div>
             <div class="col-md-6">
               <div class="form-floating">
-                <textarea class="form-control text-area-custom" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <textarea class="form-control text-area-custom" placeholder="Tinggalkan pesan anda di sini!" id="floatingTextarea2" style="height: 100px" name="pesan"></textarea>
               </div>
             </div>
           </div>
           <div class="row">
             <div class="col-md-12">
-            <button type="submit" class="btn btn-info submit-btn-custom">Submit</button>
+            <button type="submit" class="btn btn-info submit-btn-custom" name="submit">Submit</button>
           </div>
           </div>
           </form>

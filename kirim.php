@@ -1,19 +1,15 @@
-<?php
+<?php 
 
-$conn = mysqli_connect("127.0.0.1", "root", "","kirimpuisi");
+    require 'config.php';
 
-
-$nama_lengkap = $_POST['nama_lengkap'];
-$email = $_POST["email"];
-$phone = $_POST["phone"];
-$judul = $_POST["judul"];
-$kategori = $_POST["kategori"];
-$isi = $_POST["isi"];
-$submit = $_POST["submit"];
-
-$sql = "INSERT INTO kirimpuisi_table VALUES('$nama_lengkap','$email','$phone','$judul','$kategori','$isi','$submit')";
-
-
-mysqli_query($conn, $sql);
+    $nama = $_POST['nama'];
+    $email = $_POST['email'];
+    $hp = $_POST['hp'];
+    $judul = $_POST['judul'];
+    $kategori = $_POST['kategori'];
+    $isi = $_POST['isi'];
+    $submit = $_POST['submit'];
+    
+    mysqli_query($conn, "INSERT INTO kirimpuisi VALUES('$nama','$email','$hp','$judul','$kategori','$isi','$submit')")
 
 ?>
