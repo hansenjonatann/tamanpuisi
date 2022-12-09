@@ -96,11 +96,15 @@ form button.search-btn-custom {
 }
 
 #main-custom .header-btn-custom {
-  color: white;
   padding: 10px;
   font-family: var(--bs-body-font-family);
   margin-bottom: 75px;
   margin-top: 20px;
+}
+
+#main-custom .header-btn-custom a {
+  color: white;
+  text-decoration: none;
 }
 
 /* --------Recommend Poetry---------- */
@@ -122,7 +126,7 @@ form button.search-btn-custom {
 
 .card.card-custom {
   border-radius: 0;
-  width: 25% !important;
+  width: 25%;
   height: 300px;
   cursor: pointer;
   /* background-image: url(gambar/cardwallpaper.jpg); */
@@ -294,6 +298,35 @@ div.footer-copyright-custom {
   }
 
   .responsive-margin {
+    /*terpopuler*/
     margin-top: 70px;
+  }
+
+  /* quotes */
+  .quotes-text-custom {
+    text-align: center;
+  }
+
+  .quotes-name-custom {
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  /* Card Rekomendasi */
+  .slide1-custom {
+    display: block;
+  }
+
+  .card-custom {
+    margin: auto;
+    margin-bottom: 30px;
+    width: 70% !important;
+  }
+
+  .button-layout-custom-left {
+    padding-right: 0px !important;
+  }
+  .button-layout-custom-right {
+    padding-left: 0px !important;
   }
 }

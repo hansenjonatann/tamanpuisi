@@ -69,6 +69,11 @@ form button.search-btn-custom {
   margin-top: 70px;
 }
 
+.about-text-custom h1,
+.about-text-custom h3 {
+  margin-bottom: 20px;
+}
+
 .btn-about-custom {
   margin-right: 20px;
 }
@@ -169,17 +174,27 @@ div.footer-copyright-custom {
 /* ------------Responsive------------- */
 /* -----Responsive Di Card------- */
 @media only screen and (max-width: 600px) {
-  .flex-custom,
+  .flex-custom, /*our team*/
   .flex-custom2 {
     display: block;
   }
 
   .card-custom {
+    /* our team*/
     margin: auto;
     margin-bottom: 20px;
   }
 
   footer {
     margin-top: 100px;
+  }
+
+  .quotes-text-custom {
+    text-align: center;
+  }
+
+  .quotes-name-custom {
+    margin: auto;
+    margin-top: 10px;
   }
 }
