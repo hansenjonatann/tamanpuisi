@@ -96,6 +96,7 @@ textarea {
 .submit-btn-custom {
   margin: auto;
   margin-bottom: 100px;
+  color: white !important;
 }
 
 /* --------------- Footer -------------- */
