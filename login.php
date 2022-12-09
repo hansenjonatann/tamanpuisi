@@ -20,6 +20,8 @@
 				exit;
 			}
 		}
+
+		$error = true;
 	}
  ?>
 <!DOCTYPE html>
@@ -37,6 +39,9 @@
 				<h1 class="form-title">
 					Log In
 				</h1>
+				<?php if( isset($error) ) :  ?> 
+					<p style="color:red; font-style: italic;">Username atau kata sandi salah!!</p>
+				<?php endif ?>
 			</div>
 			<form action="" method="post">
 				<input type="text" name="username" placeholder="Enter your username">
