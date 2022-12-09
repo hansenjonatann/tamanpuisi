@@ -48,6 +48,14 @@ form button.search-btn-custom {
   position: relative;
 }
 
+.form-label {
+  color: #39c0de;
+}
+
+.form-text {
+  color: white !important;
+}
+
 #contact-custom::before {
   content: "";
   position: absolute;
@@ -57,7 +65,7 @@ form button.search-btn-custom {
   background-position: center;
   height: 100%;
   width: 100%;
-  filter: brightness(75%);
+  filter: brightness(50%);
 }
 
 .contact-relative-custom {

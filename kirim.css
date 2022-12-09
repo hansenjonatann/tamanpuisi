@@ -109,6 +109,10 @@ div.footer-copyright-custom {
   padding: 20px 0 20px 0;
 }
 
+.btn-custom {
+  color: white !important;
+}
+
 @media only screen and (max-width: 600px) {
   footer {
     margin-top: 100px;
