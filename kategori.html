@@ -1,12 +1,10 @@
-<?php
+<?php 
 
-require 'kirim.php';
+  require 'config.php';
 
-$result = mysqli_query($conn, "SELECT * FROM kirimpuisi");
+  $result = mysqli_query($conn, "SELECT * FROM kirimpuisi");
 
 ?>
-
-
 <!doctype html>
 <html lang="en">
 
@@ -106,7 +104,7 @@ $result = mysqli_query($conn, "SELECT * FROM kirimpuisi");
     </nav>
 
     <!-- ---------------Isi------------- -->
-    <?php while ($row = mysqli_fetch_assoc($result)) { ?>
+    <?php while ($row = mysqli_fetch_assoc($result)); { ?>
       <section id="terbaik">
         <div class="container-md">
           <div class="judul">
