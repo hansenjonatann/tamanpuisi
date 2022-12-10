@@ -1,8 +1,8 @@
 <?php 
 
-  require 'config.php';
+  //require 'config.php';
 
-  $puisi = query("SELECT * FROM kirimpuisi");
+  //$puisi = query("SELECT * FROM kirimpuisi");
 
 ?>
 <!doctype html>
@@ -64,38 +64,38 @@
               <a class="nav-link" href="#terbaik">Terbaik</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Terbaru</a>
+              <a class="nav-link" href="#terbaru">Terbaru</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Rekomendasi</a>
+              <a class="nav-link" href="#rekomendasi">Rekomendasi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Balada</a>
+              <a class="nav-link" href="#balada">Balada</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Elegi</a>
+              <a class="nav-link" href="#elegi">Elegi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Epigram</a>
+              <a class="nav-link" href="#epigram">Epigram</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Himne</a>
+              <a class="nav-link" href="#himne">Himne</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Ode</a>
+              <a class="nav-link" href="#ode">Ode</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Romansa</a>
+              <a class="nav-link" href="#romansa">Romansa</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Satire</a>
+              <a class="nav-link" href="#satire">Satire</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#horror" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Lainnya
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Horror</a></li>
+                <li><a class="dropdown-item" href="#horror">Horror</a></li>
               </ul>
             </li>
           </ul>
@@ -104,30 +104,266 @@
     </nav>
 
     <!-- ---------------Isi------------- -->
-    
-    <?php $i = 1; ?>
-    <?php foreach($puisi as $poetry ) : ?>
-      <section id="terbaik">
+    <!-- =====TERBAIK===== -->
+    <section id="terbaik">
+      <div class="container-md">
+        <div class="judul">
+          <h1 class="text-center">Terbaik</h1>
+        </div>
+        <div class="isi">
+          <div class="card card-custom" style="width: 18rem;">
+            <div class="card-body">
+              <a href="bacapuisi.html">
+                <h3 class="card-title">Doa</h3>
+                <div class="category-line-custom"></div>
+                <div class="keteranganCard-custom">
+                  <h6 class="card-subtitle mb-2">Kategori: Himne</h6>
+                  <h6 class="card-subtitle mb-2">Puisi dari: Chairil Anwar</h6>
+                  <h6 class="card-subtitle mb-2">Lolos Moderasi pada: 20 Oktober 2022</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====TERBARU=====- -->
+    <section id="terbaru">
+      <div class="container-md">
+        <div class="judul">
+          <h1 class="text-center">Terbaru</h1>
+        </div>
+        <div class="isi">
+          <div class="card card-custom" style="width: 18rem;">
+            <div class="card-body">
+              <a href="bacapuisi.html">
+                <h3 class="card-title">Doa</h3>
+                <div class="category-line-custom"></div>
+                <div class="keteranganCard-custom">
+                  <h6 class="card-subtitle mb-2">Kategori: Himne</h6>
+                  <h6 class="card-subtitle mb-2">Puisi dari: Chairil Anwar</h6>
+                  <h6 class="card-subtitle mb-2">Lolos Moderasi pada: 20 Oktober 2022</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====REKOMENDASI===== -->
+    <section id="rekomendasi">
+      <div class="container-md">
+        <div class="judul">
+          <h1 class="text-center">Rekomendasi</h1>
+        </div>
+        <div class="isi">
+          <div class="card card-custom" style="width: 18rem;">
+            <div class="card-body">
+              <a href="bacapuisi.html">
+                <h3 class="card-title">Doa</h3>
+                <div class="category-line-custom"></div>
+                <div class="keteranganCard-custom">
+                  <h6 class="card-subtitle mb-2">Kategori: Himne</h6>
+                  <h6 class="card-subtitle mb-2">Puisi dari: Chairil Anwar</h6>
+                  <h6 class="card-subtitle mb-2">Lolos Moderasi pada: 20 Oktober 2022</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====BALADA===== -->
+    <section id="balada">
+      <div class="container-md">
+        <div class="judul">
+          <h1 class="text-center">Balada</h1>
+        </div>
+        <div class="isi">
+          <div class="card card-custom" style="width: 18rem;">
+            <div class="card-body">
+              <a href="bacapuisi.html">
+                <h3 class="card-title">Doa</h3>
+                <div class="category-line-custom"></div>
+                <div class="keteranganCard-custom">
+                  <h6 class="card-subtitle mb-2">Kategori: Himne</h6>
+                  <h6 class="card-subtitle mb-2">Puisi dari: Chairil Anwar</h6>
+                  <h6 class="card-subtitle mb-2">Lolos Moderasi pada: 20 Oktober 2022</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====ELEGI===== -->
+    <section id="elegi">
+      <div class="container-md">
+        <div class="judul">
+          <h1 class="text-center">Elegi</h1>
+        </div>
+        <div class="isi">
+          <div class="card card-custom" style="width: 18rem;">
+            <div class="card-body">
+              <a href="bacapuisi.html">
+                <h3 class="card-title">Doa</h3>
+                <div class="category-line-custom"></div>
+                <div class="keteranganCard-custom">
+                  <h6 class="card-subtitle mb-2">Kategori: Himne</h6>
+                  <h6 class="card-subtitle mb-2">Puisi dari: Chairil Anwar</h6>
+                  <h6 class="card-subtitle mb-2">Lolos Moderasi pada: 20 Oktober 2022</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====EPIGRAM===== -->
+    <section id="epigram">
+      <div class="container-md">
+        <div class="judul">
+          <h1 class="text-center">Epigram</h1>
+        </div>
+        <div class="isi">
+          <div class="card card-custom" style="width: 18rem;">
+            <div class="card-body">
+              <a href="bacapuisi.html">
+                <h3 class="card-title">Doa</h3>
+                <div class="category-line-custom"></div>
+                <div class="keteranganCard-custom">
+                  <h6 class="card-subtitle mb-2">Kategori: Himne</h6>
+                  <h6 class="card-subtitle mb-2">Puisi dari: Chairil Anwar</h6>
+                  <h6 class="card-subtitle mb-2">Lolos Moderasi pada: 20 Oktober 2022</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====HIMNE===== -->
+    <section id="himne">
+      <div class="container-md">
+        <div class="judul">
+          <h1 class="text-center">Himne</h1>
+        </div>
+        <div class="isi">
+          <div class="card card-custom" style="width: 18rem;">
+            <div class="card-body">
+              <a href="bacapuisi.html">
+                <h3 class="card-title">Doa</h3>
+                <div class="category-line-custom"></div>
+                <div class="keteranganCard-custom">
+                  <h6 class="card-subtitle mb-2">Kategori: Himne</h6>
+                  <h6 class="card-subtitle mb-2">Puisi dari: Chairil Anwar</h6>
+                  <h6 class="card-subtitle mb-2">Lolos Moderasi pada: 20 Oktober 2022</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====ODE===== -->
+    <section id="ode">
+      <div class="container-md">
+        <div class="judul">
+          <h1 class="text-center">Ode</h1>
+        </div>
+        <div class="isi">
+          <div class="card card-custom" style="width: 18rem;">
+            <div class="card-body">
+              <a href="bacapuisi.html">
+                <h3 class="card-title">Doa</h3>
+                <div class="category-line-custom"></div>
+                <div class="keteranganCard-custom">
+                  <h6 class="card-subtitle mb-2">Kategori: Himne</h6>
+                  <h6 class="card-subtitle mb-2">Puisi dari: Chairil Anwar</h6>
+                  <h6 class="card-subtitle mb-2">Lolos Moderasi pada: 20 Oktober 2022</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====ROMANSA===== -->
+    <section id="romansa">
+      <div class="container-md">
+        <div class="judul">
+          <h1 class="text-center">Romansa</h1>
+        </div>
+        <div class="isi">
+          <div class="card card-custom" style="width: 18rem;">
+            <div class="card-body">
+              <a href="bacapuisi.html">
+                <h3 class="card-title">Doa</h3>
+                <div class="category-line-custom"></div>
+                <div class="keteranganCard-custom">
+                  <h6 class="card-subtitle mb-2">Kategori: Himne</h6>
+                  <h6 class="card-subtitle mb-2">Puisi dari: Chairil Anwar</h6>
+                  <h6 class="card-subtitle mb-2">Lolos Moderasi pada: 20 Oktober 2022</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- =====SATIRE===== -->
+      <section id="satire">
         <div class="container-md">
           <div class="judul">
-            <h1 class="text-center">Terbaik</h1>
+            <h1 class="text-center">Satire</h1>
           </div>
           <div class="isi">
             <div class="card card-custom" style="width: 18rem;">
               <div class="card-body">
-                <h3 class="card-title text-center"><?= $poetry['judul']; ?></h3>
-                <div class="category-line-custom"></div>
-                <div class="keteranganCard-custom">
-                  <h6 class="card-subtitle mb-2">Kategori: <?= $poetry{
-                                                            'kategori'}; ?></h6>
-                  <h6 class="card-subtitle mb-2">Puisi dari: <?= $poetry{
-                                                              'nama'}; ?></h6>
-                  <h6 class="card-subtitle mb-2">Lolos Moderasi pada: 20 Oktober 2022</h6>
-                </div>
+                <a href="bacapuisi.html">
+                  <h3 class="card-title">Doa</h3>
+                  <div class="category-line-custom"></div>
+                  <div class="keteranganCard-custom">
+                    <h6 class="card-subtitle mb-2">Kategori: Himne</h6>
+                    <h6 class="card-subtitle mb-2">Puisi dari: Chairil Anwar</h6>
+                    <h6 class="card-subtitle mb-2">Lolos Moderasi pada: 20 Oktober 2022</h6>
+                  </div>
+                </a>
               </div>
             </div>
-            <?php $i++; ?>
-            <?php endforeach; ?>
+          </div>
+        </div>
+      </section>
+      
+      <!-- =====HORRROR===== -->
+      <section id="horror">
+        <div class="container-md">
+          <div class="judul">
+            <h1 class="text-center">Horror</h1>
+          </div>
+          <div class="isi">
+            <div class="card card-custom" style="width: 18rem;">
+              <div class="card-body">
+                <a href="bacapuisi.html">
+                  <h3 class="card-title">Doa</h3>
+                  <div class="category-line-custom"></div>
+                  <div class="keteranganCard-custom">
+                    <h6 class="card-subtitle mb-2">Kategori: Himne</h6>
+                    <h6 class="card-subtitle mb-2">Puisi dari: Chairil Anwar</h6>
+                    <h6 class="card-subtitle mb-2">Lolos Moderasi pada: 20 Oktober 2022</h6>
+                  </div>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>

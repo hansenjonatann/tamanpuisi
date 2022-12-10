@@ -65,7 +65,8 @@ form button.search-btn-custom {
 /* ------------ISI----------------- */
 .judul {
   margin-top: 50px !important;
-  width: 30%;
+  margin-bottom: 50px !important;
+  width: 50%;
   margin: auto;
 }
 
@@ -77,37 +78,20 @@ form button.search-btn-custom {
 }
 
 .isi {
+  margin-bottom: 150px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 /* --------Recommend Poetry---------- */
-/* #recommend-custom{
-    background-image: url(gambar/cardwallpaper.jpg);
-} */
-
-.sub-title-custom {
-  font-family: Century Gothic;
-}
-
-.slide1-custom {
-  margin: auto;
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 50px;
-  margin-top: 75px;
-}
-
 .card.card-custom {
   border-radius: 0;
-  width: 25% !important;
+  width: 25%;
   height: 300px;
   cursor: pointer;
-  /* background-image: url(gambar/cardwallpaper.jpg); */
-  /* background-repeat: no-repeat; */
-  /* background-size: cover; */
   box-shadow: 0 0 10px #888888;
+  margin-bottom: 50px;
 }
 
 .card.card-custom:hover {
@@ -115,7 +99,7 @@ form button.search-btn-custom {
   transition: transform 0.9s;
 }
 
-.slide1-custom h3 {
+.isi h3 {
   text-align: center;
   margin-top: 30px;
 }
@@ -124,7 +108,7 @@ form button.search-btn-custom {
   content: "";
   width: 50px;
   height: 3px;
-  background-color: red;
+  background-color: #39c0de;
   margin: auto;
   margin-top: 20px;
 }
@@ -135,4 +119,26 @@ form button.search-btn-custom {
 
 .keteranganCard-custom h6 {
   margin-top: 20px;
+}
+
+.card-body a {
+  text-decoration: none;
+  color: black;
+}
+
+.card-body a:hover {
+  color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  /* Card Rekomendasi */
+  .slide1-custom {
+    display: block;
+  }
+
+  .card-custom {
+    margin: auto;
+    margin-bottom: 30px;
+    width: 70%;
+  }
 }

@@ -81,7 +81,7 @@ form button.search-btn-custom {
 .garismerah-custom {
   width: 10px;
   height: 200px;
-  background-color: rgb(170, 0, 0);
+  background-color: #39c0de;
   float: left;
   margin-left: 15px;
 }
@@ -89,7 +89,7 @@ form button.search-btn-custom {
 .garismerah-custom2 {
   width: 10px;
   height: 200px;
-  background-color: rgb(250, 3, 3);
+  background-color: #64c0d4;
   float: left;
   margin-right: 8px;
 }
@@ -104,7 +104,7 @@ form button.search-btn-custom {
 }
 
 .warna-kategori {
-  color: red !important;
+  color: #39c0de !important;
 }
 
 .kertas-custom2 h1 {
