@@ -1,0 +1,178 @@
+body {
+  background-color: #f4f4f4 !important;
+}
+
+div.container-custom {
+  max-width: 1600px;
+}
+
+/* ------------Navbar----------- */
+.navbar-custom {
+  box-shadow: 0 0 10px #888888;
+  background-color: #fff;
+  padding-bottom: 30px !important;
+  padding-top: 30px !important;
+}
+
+.ul-custom li {
+  margin-left: 20px;
+}
+
+.ul-custom li a:hover {
+  color: #39c0de;
+}
+
+input.search-custom:focus {
+  border-color: #39c0de;
+  box-shadow: none;
+}
+
+form button.search-btn-custom {
+  color: #39c0de;
+  border-color: #39c0de;
+}
+
+.search-btn-custom:hover,
+.search-btn-custom:active {
+  border-color: #39c0de !important;
+  background-color: #39c0de !important;
+  color: white !important;
+}
+
+.active-link-custom {
+  color: #39c0de !important;
+}
+
+/* ---------Main---------- */
+#main-custom {
+  position: relative;
+  margin-bottom: 150px;
+  font-family: century Gothic !important;
+}
+
+#main-custom::before {
+  content: "";
+  position: absolute;
+  background-image: url(gambar/taman.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50%;
+  width: 100%;
+  filter: brightness(35%);
+}
+
+.kertas-custom {
+  position: relative;
+  width: 80%;
+  height: 20vh;
+  background-color: white;
+  margin: auto;
+}
+
+.kertas-custom2 {
+  position: relative;
+  width: 80%;
+  background-color: white;
+  margin: auto;
+}
+
+/* --------Isi----------- */
+.garismerah-custom {
+  width: 10px;
+  height: 200px;
+  background-color: rgb(170, 0, 0);
+  float: left;
+  margin-left: 15px;
+}
+
+.garismerah-custom2 {
+  width: 10px;
+  height: 200px;
+  background-color: rgb(250, 3, 3);
+  float: left;
+  margin-right: 8px;
+}
+
+.bagian-atas-custom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bagian-atas-custom h6 {
+  padding: 10px;
+}
+
+.warna-kategori {
+  color: red !important;
+}
+
+.kertas-custom2 h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 25px;
+}
+
+.penulis-custom {
+  margin-bottom: 60px;
+  margin-right: 25px;
+}
+
+.kertas-custom2 p {
+  line-height: 2.5;
+  padding-bottom: 40px;
+}
+
+/* --------------- Footer -------------- */
+footer {
+  margin-top: 150px;
+}
+
+div.footer-card-custom {
+  border-radius: 0;
+}
+
+div.footer-card-custom img {
+  margin-top: 30px;
+}
+
+div.footer-body-custom {
+  padding: 0;
+}
+
+div.footer-body-custom h5 {
+  margin: 15px 0 20px 0;
+}
+
+div.footer-body-custom p {
+  margin: 0;
+}
+
+.footer-social-media-custom a img {
+  width: 35px;
+  margin: 30px 0 30px 0;
+  cursor: pointer;
+}
+
+div.footer-copyright-custom {
+  border-top-color: white;
+  padding: 20px 0 20px 0;
+}
+
+/* ------------Responsive------------- */
+/* -----Responsive Di Card------- */
+@media only screen and (max-width: 600px) {
+  .bagian-atas-custom {
+    display: block;
+    text-align: left;
+  }
+
+  h6.tanggal-moderasi {
+    display: none;
+  }
+
+  .garismerah-custom,
+  .garismerah-custom2 {
+    height: 165px;
+  }
+}
