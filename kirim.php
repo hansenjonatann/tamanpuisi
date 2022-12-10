@@ -10,6 +10,11 @@
     $isi = $_POST['isi'];
     $submit = $_POST['submit'];
     
-    mysqli_query($conn, "INSERT INTO kirimpuisi VALUES('$nama','$email','$hp','$judul','$kategori','$isi','$submit')")
+    mysqli_query($conn, "INSERT INTO kirimpuisi VALUES('$nama','$email','$hp','$judul','$kategori','$isi','$submit')");
 
+    if(isset($_POST["submit"])) {
+        header("location: kategori.php");
+    } else {
+        echo mysqli_error($conn);
+    }
 ?>

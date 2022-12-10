@@ -12,6 +12,15 @@ if(!$conn) {
 }
 
 
+function query($query) {
+    global $conn;
+    $result = mysqli_query($conn, $query);
+    $poetrys = [];
+    while($poetry = mysqli_fetch_assoc($result)) {
+        $poetrys[] = $poetry;
+    }
+    return $poetrys;
+} 
 
 function register($data) {
     global $conn;
@@ -39,5 +48,7 @@ function register($data) {
 
         return mysqli_affected_rows($conn);
 }
+
+
 
 ?>
