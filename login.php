@@ -46,9 +46,16 @@
 			<form action="" method="post">
 				<input type="text" name="username" placeholder="Enter your username">
 				<input type="password" name="password" placeholder="Enter your password">
-				<button type="submit" name="login">LOGIN</button>
+				<button type="submit" name="login" id="btnLogin">LOGIN</button>
+
+				<hr>
+				<div class="nohaveaccount">
+					<p>Belum Punya Akun? <a href="signup.php">Daftar di sini!</a></p>
+				</div>
 			</form>
 		</div>
 	</div>
+
+	<script type="text/javascript" src="script"></script>	
 </body>
 </html>
