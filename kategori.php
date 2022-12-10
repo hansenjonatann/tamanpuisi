@@ -103,6 +103,22 @@
       </div>
     </nav>
 
+    <!-- ------------------Search-------------- -->
+    <section id="search">
+    <div class="container-md">
+    <div class="row mt-3 justify-content-center">
+        <div class="col-md-8">
+          <h1 class="text-center text-search-custom">Cari Puisi</h1>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Judul Puisi" id="search-input">
+            <button class="btn btn-info search-btn-custom" type="button" id="search-button">Search</button>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+    </section>
+
     <!-- ---------------Isi------------- -->
     <!-- =====TERBAIK===== -->
     <section id="terbaik">

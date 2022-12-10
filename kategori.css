@@ -62,6 +62,20 @@ form button.search-btn-custom {
   color: #39c0de;
 }
 
+/* -------------Search------------- */
+.search-btn-custom {
+  color: white !important;
+}
+
+.text-search-custom {
+  font-family: Century Gothic !important;
+}
+
+#search {
+  margin-top: 65px;
+  margin-bottom: 80px;
+}
+
 /* ------------ISI----------------- */
 .judul {
   margin-top: 50px !important;
