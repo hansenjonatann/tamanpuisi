@@ -44,10 +44,12 @@
               <a class="nav-link" href="kontak.html">KONTAK</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
+    <!-- <form class="d-flex" role="search">
             <input class="form-control me-2 search-custom" type="search" placeholder="Search" aria-label="Search">
             <button class="btn search-btn-custom" type="submit">Search</button>
-          </form>
+          </form> -->
+          <button type="button" class="btn btn-light btn-login-custom"><a href="login.php" id="login">LOGIN</a></button>
+            <button type="button" class="btn btn-info btn-signup-custom"><a href="signup.php">SIGN UP</a></button>
         </div>
       </div>
     </nav>

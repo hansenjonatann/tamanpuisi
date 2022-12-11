@@ -27,7 +27,7 @@ input {
   color: #39c0de;
 }
 
-input.search-custom:focus {
+/* input.search-custom:focus {
   border-color: #39c0de;
   box-shadow: none;
 }
@@ -42,10 +42,37 @@ form button.search-btn-custom {
   border-color: #39c0de !important;
   background-color: #39c0de !important;
   color: white !important;
-}
+} */
 
 .active-link-custom {
   color: #39c0de !important;
+}
+
+/* button login and signup */
+.btn-login-custom,
+.btn-signup-custom {
+  border-radius: 0 !important;
+  padding: 6px 13px !important;
+  font-size: 20px !important;
+  margin-right: 20px;
+}
+
+.btn-login-custom {
+  background-color: white !important;
+  border: none !important;
+}
+.btn-login-custom a {
+  color: rgba(0, 0, 0, 0.55) !important;
+  text-decoration: none;
+}
+
+.btn-login-custom:hover {
+  color: #39c0de !important;
+}
+
+.btn-signup-custom a {
+  color: white !important;
+  text-decoration: none;
 }
 
 /* ------------Navbar Kecil----------- */
@@ -154,5 +181,10 @@ form button.search-btn-custom {
     margin: auto;
     margin-bottom: 30px;
     width: 70%;
+  }
+
+  /* button login and sign up */
+  .btn-login-custom {
+    padding-left: 20px !important;
   }
 }

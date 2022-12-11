@@ -53,13 +53,13 @@ form button.search-btn-custom {
 #main-custom::before {
   content: "";
   position: absolute;
-  background-image: url(gambar/taman.jpg);
+  background-image: url(gambar/wallpaperbaca.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 50%;
   width: 100%;
-  filter: brightness(35%);
+  filter: brightness(60%);
 }
 
 .kertas-custom {
