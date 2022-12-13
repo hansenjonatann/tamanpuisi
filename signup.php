@@ -8,6 +8,7 @@
             echo "<script>
                 alert('Akun berhasil didaftarkan');
             </script>";
+            header("location: login.php");
         } else{
             echo mysqli_error($conn);
         }
@@ -20,28 +21,81 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Taman Puisi | Sign Up</title>
-    <link rel="stylesheet" type="text/css" href="signup.css">
+    <title>Taman Puisi | SignUp</title>
+        <style>
+            body{
+                background: #39c0de;
+                font-family: sans-serif;
+            }
+
+            .tulisan_signup{
+                text-align: center;
+                text-transform: uppercase;
+            }
+
+            .kotak_signup{
+                width: 360px;
+                background: white;
+                margin: 80px auto;
+                padding: 30px 20px;
+                border-radius: 35px;
+            }
+
+            label{
+                font-size: 11pt;
+            }
+
+            .form_signup{
+                box-sizing: border-box;
+                width: 100%;
+                padding: 10px;
+                font-size: 11pt;
+                margin-bottom: 20px;
+/*                color: steelblue;*/
+                color: #000333;
+                font-weight: 600;
+            }
+
+            .tombol_signup{
+                background: #39c0de;
+                color: white;
+                font-size: 11pt;
+                width: 100%;
+                border: none;
+                border-radius: 3px;
+                padding: 10px 20px;
+            }
+
+            .tombol_signup:hover{
+                background: #9bf6ff;
+            }
+
+          /*  .link{
+                color: #232323;
+                text-decoration: none;
+                font-size: 11pt;
+            }*/
+    </style>
 </head>
 <body>
-    <div class="container">
-        <div id="box">
-            <div class="form-control">
-                <h1 class="form-title">Sign Up</h1>
-                <form action="" method="post">
-                    <input type="text" name="username" placeholder="Username">
-                    <input type="password" name="password" placeholder="Password">
-                    <input type="password" name="cpassword" placeholder="Konfirmasi Password">
-                    <button type="submit" name="signup">Sign Up</button>
-                </form>
+    <div class="kotak_signup">
+        <p class="tulisan_signup">signup</p>
 
-                    <br>
-                    <hr>
-                <div class="pesan">
-                    <p>Sudah Punya Akun? <a href="login.php">Login di sini!</a></p>
-                </div>
-            </div>
-        </div>
+        <form action="" method="post">
+            <label for ="username">Username : </label>
+            <input type="text" name="username" id="username" class="form_signup" placeholder="Buat Username atau Email Anda..." required>
+            <label for ="password">Password : </label>
+             <input type="password" name="password" id="password" class="form_signup" placeholder="Buat Kata Sandi Anda..."  required >
+             <label for ="cpassword">Konfirmasi Password: </label>
+               <input type="password" name="cpassword" id="cpassword" class="form_signup" placeholder="Masukkan Kembali Kata Sandi Anda..." >
+             <button type="submit" class="tombol_signup" name="signup">SIGNUP</button>   
+
+             <br>
+             <br>
+             <center>
+                <p>Sudah Punya Akun?<a href="login.php" class="link"> Login</a> Di Sini!</p>
+             </center>
+        </form>
     </div>
 </body>
 </html>

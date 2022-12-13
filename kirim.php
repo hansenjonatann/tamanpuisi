@@ -13,7 +13,10 @@
     mysqli_query($conn, "INSERT INTO kirimpuisi VALUES('$nama','$email','$hp','$judul','$kategori','$isi','$submit')");
 
     if(isset($_POST["submit"])) {
-        header("location: kategori.php");
+        echo "<script>
+            alert('Silahkan Login terlebih dahulu');
+            window.location.href = 'login.php';
+        </script>";
     } else {
         echo mysqli_error($conn);
     }

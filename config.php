@@ -49,6 +49,11 @@ function register($data) {
         return mysqli_affected_rows($conn);
 }
 
+    function logout($data)
+    {
+        session_destroy();
+        header("location: login.php");
+    }
 
 
 ?>
