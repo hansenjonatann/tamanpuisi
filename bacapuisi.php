@@ -1,9 +1,20 @@
+<?php 
+
+  require 'config.php';
+
+  $isi = query("SELECT * FROM kirimpuisi ");
+  
+
+
+
+ ?>
+
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Beranda Taman Puisi</title>
+    <title>Taman Puisi | Baca Puisi</title>
     <link rel="stylesheet" href="bacapuisi.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   </head>
@@ -43,18 +54,19 @@
 
       <!-- ------------Main-------------- -->
       <section id="main-custom">
+      <?php foreach($isi as $poetry) : ?>
       <div class="container-md">
           <div class="kertas-custom opacity-0"></div>
           <div class="kertas-custom2 text-center">
                 <div class="garismerah-custom"></div>
                 <div class="garismerah-custom2"></div>
             <div class="bagian-atas-custom">
-                <h6 class="warna-kategori"><b>Kategori: Himne</b></h6>
-                <h6 class="tanggal-moderasi"><b>Lolos Moderasi pada: 24 November 2022</b></h6>
+                <h6 class="warna-kategori"><b>Kategori: <?= $poetry['kategori']; ?> </b></h6>
+                <h6 class="tanggal-moderasi"><b>Lolos Moderasi pada: 4 Desember 2022</b></h6>
             </div>
-            <h1><b>Doa</b></h1>
-            <h6 class="penulis-custom"><b>Oleh: Chairil Anwar</b></h6>
-            <p>Tuhanku <br>
+            <h1><b><?= $poetry['judul']; ?></b></h1>
+            <h6 class="penulis-custom"><b>Oleh: <?= $poetry['nama']; ?></b></h6>
+          <!--   <p>Tuhanku <br>
                 Dalam termangu <br>
                 Aku masih menyebut nama-Mu <br>
                 Biar susah sungguh <br>
@@ -69,9 +81,11 @@
                 Aku mengembara di negeri asing <br>
                 Tuhanku <br>
                 Di pintu-Mu aku mengetuk <br>
-                Aku tidak bisa berpaling</p>
+                Aku tidak bisa berpaling</p> -->
           </div>
     </div>
+  <?php endforeach; ?>
+  <!-- <?php $i//++//; ?> -->
 </section>
 
 

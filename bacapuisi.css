@@ -159,6 +159,10 @@ div.footer-copyright-custom {
   padding: 20px 0 20px 0;
 }
 
+.isipuisi{
+  text-indent: 20px;
+}
+
 /* ------------Responsive------------- */
 /* -----Responsive Di Card------- */
 @media only screen and (max-width: 600px) {

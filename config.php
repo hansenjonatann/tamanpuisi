@@ -14,6 +14,7 @@ if(!$conn) {
 
 function query($query) {
     global $conn;
+    // $id = $_GET['id'];
     $result = mysqli_query($conn, $query);
     $poetrys = [];
     while($poetry = mysqli_fetch_assoc($result)) {
@@ -56,4 +57,13 @@ function register($data) {
     }
 
 
+    function cari($keyword) {
+        $query = "SELECT * FROM kirimpuisi WHERE nama LIKE '%$keyword%' OR judul LIKE '%$keyword%'  ";
+        return query($query);
+    }
+
+    function baca($key) {
+        $query = "SELECT * FROM kirimpuisi WHERE judul LIKE '%$key%' OR id LIKE '$id'";
+        return query($query);
+    }
 ?>

@@ -1,9 +1,17 @@
 <?php 
 
-  //require 'config.php';
+  require 'config.php';
+  $puisi = query("SELECT * FROM kirimpuisi");
 
-  //$puisi = query("SELECT * FROM kirimpuisi");
+  // tombol cari diklik
+  if(isset($_POST['cari']) ) {
+    $puisi = cari($_POST["keyword"]);
+  }
 
+
+  if(isset($_POST['baca'] ) ) {
+    $puisi = baca($_POST['judul']);
+  }
 ?>
 <!doctype html>
 <html lang="en">
@@ -111,10 +119,12 @@
     <div class="row mt-3 justify-content-center">
         <div class="col-md-8">
           <h1 class="text-center text-search-custom">Cari Puisi</h1>
+          <form action="" method="post">
           <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Judul Puisi" id="search-input">
-            <button class="btn btn-info search-btn-custom" type="button" id="search-button">Search</button>
+            <input type="text" class="form-control" name="keyword" placeholder="Judul Puisi" id="search-input" autofocus autocomplete="off">
+            <button class="btn btn-info search-btn-custom" type="submit" id="search-button" name="cari">Search</button>
           </div>
+          </form>
         </div>
       </div>
       <hr>
@@ -128,21 +138,28 @@
         <div class="judul">
           <h1 class="text-center">DAFTAR PUISI</h1>
         </div>
+        <?php $i = 0; ?>
+        <?php foreach($puisi as $poetry) : ?>
         <div class="isi">
           <div class="card card-custom" style="width: 18rem;">
             <div class="card-body">
-              <a href="bacapuisi.html">
-                <h3 class="card-title">Doa</h3>
+              <!-- <a href="bacapuisi.html"> -->
+                <h3 class="card-title"><?= $poetry['judul']; ?></h3>
                 <div class="category-line-custom"></div>
                 <div class="keteranganCard-custom">
-                  <h6 class="card-subtitle mb-2">Kategori: Himne</h6>
-                  <h6 class="card-subtitle mb-2">Puisi dari: Chairil Anwar</h6>
-                  <h6 class="card-subtitle mb-2">Lolos Moderasi pada: 20 Oktober 2022</h6>
+                  <h6 class="card-subtitle mb-2">Kategori: <?= $poetry['kategori']; ?></h6>
+                  <h6 class="card-subtitle mb-2">Puisi dari: <?= $poetry['nama']; ?></h6>
+                  <h6 class="card-subtitle mb-2">Lolos Moderasi pada: 4 Desember 2022</h6>
+                  <form action="bacapuisi.php" method="post">
+                  <button type="submit" name="baca">Baca Puisi</button>
+                  </form>
                 </div>
               </a>
             </div>
           </div>
         </div>
+      <?php endforeach; ?>
+      <?php $i++; ?>
       </div>
     </section>
 
