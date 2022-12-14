@@ -32,7 +32,7 @@
               <a class="nav-link" href="index.html">BERANDA</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active-link-custom" href="#">KATEGORI</a>
+              <a class="nav-link active-link-custom" href="#">BACA PUISI</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="kirim.html">KIRIM PUISI</a>
@@ -55,7 +55,7 @@
     </nav>
 
     <!-- --------------------------Navbar Kecil-------------------------->
-    <nav class="navbar navbar-expand-lg navbar-kecil-custom">
+    <!-- <nav class="navbar navbar-expand-lg navbar-kecil-custom">
       <div class="container-md container-custom">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -103,7 +103,7 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav> -->
 
     <!-- ------------------Search-------------- -->
     <section id="search">
@@ -122,11 +122,11 @@
     </section>
 
     <!-- ---------------Isi------------- -->
-    <!-- =====TERBAIK===== -->
+    <!-- =====TERBAIK, DIUBAH MENJADI DAFTAR PUISI===== -->
     <section id="terbaik">
       <div class="container-md">
         <div class="judul">
-          <h1 class="text-center">Terbaik</h1>
+          <h1 class="text-center">DAFTAR PUISI</h1>
         </div>
         <div class="isi">
           <div class="card card-custom" style="width: 18rem;">
@@ -146,8 +146,26 @@
       </div>
     </section>
 
+
+    <!-- --------------Footer-------------->
+<footer>
+<div class="card text-center text-bg-dark footer-card-custom" >
+  <div class="card-body footer-body-custom">
+    <img src="gambar/TAMAN PUISI.png" alt="taman puisi logo">
+    <h5 class="card-title">Kelompok 3 - Teknik Pemograman - 1SIMA20221 - Universitas Internasional Batam</h5>
+    <p class="card-text">Website ini dirancang dan dibangun dengan cinta oleh kelompok 3. Kami menyediakan sebuah media untuk para pecinta puisi di seluruh Indonesia, <br> memberikan solusi dalam rangka kurangnya media untuk berkarya sastra puisi.</p>
+    <div class="footer-social-media-custom">
+      <a href="https://id-id.facebook.com/UIB.GoInternational/"><img src="gambar/facebook.png"></a>
+      <a href="https://www.instagram.com/universitasinternasionalbatam/?hl=en"><img src="gambar/instagram.png"></a>
+      <a href="https://twitter.com/uibatam"><img src="gambar/twitter.png"></a>
+      <a href="https://www.youtube.com/@UIBChannelHumas"><img src="gambar/youtube.png"></a>
+    </div>
+  <div class="card-footer footer-copyright-custom">Copyright Ⓒ 2022 All Right Deserved</div>
+</div>
+</footer>
+
     <!-- =====TERBARU=====- -->
-    <section id="terbaru">
+    <!-- <section id="terbaru">
       <div class="container-md">
         <div class="judul">
           <h1 class="text-center">Terbaru</h1>
@@ -168,10 +186,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- =====REKOMENDASI===== -->
-    <section id="rekomendasi">
+    <!-- <section id="rekomendasi">
       <div class="container-md">
         <div class="judul">
           <h1 class="text-center">Rekomendasi</h1>
@@ -192,10 +210,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- =====BALADA===== -->
-    <section id="balada">
+    <!-- <section id="balada">
       <div class="container-md">
         <div class="judul">
           <h1 class="text-center">Balada</h1>
@@ -216,10 +234,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- =====ELEGI===== -->
-    <section id="elegi">
+    <!-- <section id="elegi">
       <div class="container-md">
         <div class="judul">
           <h1 class="text-center">Elegi</h1>
@@ -240,10 +258,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- =====EPIGRAM===== -->
-    <section id="epigram">
+    <!-- <section id="epigram">
       <div class="container-md">
         <div class="judul">
           <h1 class="text-center">Epigram</h1>
@@ -264,10 +282,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- =====HIMNE===== -->
-    <section id="himne">
+    <!-- <section id="himne">
       <div class="container-md">
         <div class="judul">
           <h1 class="text-center">Himne</h1>
@@ -288,10 +306,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- =====ODE===== -->
-    <section id="ode">
+    <!-- <section id="ode">
       <div class="container-md">
         <div class="judul">
           <h1 class="text-center">Ode</h1>
@@ -312,10 +330,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- =====ROMANSA===== -->
-    <section id="romansa">
+    <!-- <section id="romansa">
       <div class="container-md">
         <div class="judul">
           <h1 class="text-center">Romansa</h1>
@@ -336,10 +354,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
       <!-- =====SATIRE===== -->
-      <section id="satire">
+      <!-- <section id="satire">
         <div class="container-md">
           <div class="judul">
             <h1 class="text-center">Satire</h1>
@@ -360,10 +378,10 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       
       <!-- =====HORRROR===== -->
-      <section id="horror">
+      <!-- <section id="horror">
         <div class="container-md">
           <div class="judul">
             <h1 class="text-center">Horror</h1>
@@ -384,7 +402,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
