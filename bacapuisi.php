@@ -1,8 +1,8 @@
 <?php 
 
   require 'config.php';
-
-  $isi = query("SELECT * FROM kirimpuisi ");
+  $id = $_GET['id'];
+  $isi = query("SELECT * FROM kirimpuisi WHERE id=".$id);
   
 
 
@@ -54,7 +54,7 @@
 
       <!-- ------------Main-------------- -->
       <section id="main-custom">
-      <?php foreach($isi as $poetry) : ?>
+      <?php  foreach($isi as $poetry) : ?>
       <div class="container-md">
           <div class="kertas-custom opacity-0"></div>
           <div class="kertas-custom2 text-center">
@@ -66,6 +66,7 @@
             </div>
             <h1><b><?= $poetry['judul']; ?></b></h1>
             <h6 class="penulis-custom"><b>Oleh: <?= $poetry['nama']; ?></b></h6>
+            <p><?= $poetry["isi"]; ?></p>
           <!--   <p>Tuhanku <br>
                 Dalam termangu <br>
                 Aku masih menyebut nama-Mu <br>

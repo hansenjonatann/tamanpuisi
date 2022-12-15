@@ -62,8 +62,4 @@ function register($data) {
         return query($query);
     }
 
-    function baca($key) {
-        $query = "SELECT * FROM kirimpuisi WHERE judul LIKE '%$key%' OR id LIKE '$id'";
-        return query($query);
-    }
 ?>

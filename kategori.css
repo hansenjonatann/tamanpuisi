@@ -142,7 +142,8 @@ form button.search-btn-custom {
 
 .isi h3 {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 15px;
+font-size: 25px;
 }
 
 .category-line-custom {
@@ -227,4 +228,8 @@ div.footer-copyright-custom {
   .btn-login-custom {
     padding-left: 20px !important;
   }
+
+  .judul h1 {
+  padding: 10px 40px;
+}
 }

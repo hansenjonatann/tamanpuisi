@@ -3,15 +3,16 @@
   require 'config.php';
   $puisi = query("SELECT * FROM kirimpuisi");
 
+
+
+  // $puisi = query("SELECT kirimpuisi.*, kategori.nama as kategori_nama FROM kirimpuisi  JOIN kategori ON kategori.id = kirimpuisi.kategori_id");
+
   // tombol cari diklik
   if(isset($_POST['cari']) ) {
     $puisi = cari($_POST["keyword"]);
   }
 
 
-  if(isset($_POST['baca'] ) ) {
-    $puisi = baca($_POST['judul']);
-  }
 ?>
 <!doctype html>
 <html lang="en">
@@ -133,17 +134,17 @@
 
     <!-- ---------------Isi------------- -->
     <!-- =====TERBAIK, DIUBAH MENJADI DAFTAR PUISI===== -->
-    <section id="terbaik">
+        <section id="terbaik">
       <div class="container-md">
         <div class="judul">
           <h1 class="text-center">DAFTAR PUISI</h1>
         </div>
+        <div class="isi">
         <?php $i = 0; ?>
         <?php foreach($puisi as $poetry) : ?>
-        <div class="isi">
           <div class="card card-custom" style="width: 18rem;">
             <div class="card-body">
-              <!-- <a href="bacapuisi.html"> -->
+              <a href="bacapuisi.php?id=<?= $poetry['id']?>">
                 <h3 class="card-title"><?= $poetry['judul']; ?></h3>
                 <div class="category-line-custom"></div>
                 <div class="keteranganCard-custom">
@@ -151,17 +152,16 @@
                   <h6 class="card-subtitle mb-2">Puisi dari: <?= $poetry['nama']; ?></h6>
                   <h6 class="card-subtitle mb-2">Lolos Moderasi pada: 4 Desember 2022</h6>
                   <form action="bacapuisi.php" method="post">
-                  <button type="submit" name="baca">Baca Puisi</button>
                   </form>
                 </div>
               </a>
             </div>
           </div>
-        </div>
       <?php endforeach; ?>
       <?php $i++; ?>
+        </div>
       </div>
-    </section>
+    </section> 
 
 
     <!-- --------------Footer-------------->
