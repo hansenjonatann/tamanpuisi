@@ -1,3 +1,11 @@
+<?php 
+
+  require 'config.php';
+  $isi = query("SELECT * FROM kirimpuisi");
+
+?>
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -5,6 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Taman Puisi | Beranda</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="shorcut icon" type="text/css" href="gambar/TAMAN PUISI.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   </head>
   <body>
@@ -69,23 +78,30 @@
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
+ 
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="slide1-custom">
+              <?php $i = 0; ?>
+              <?php foreach($isi as $poetry) : ?>
+                <?php   if($i==0) { ?><div class="item active"><?php  } ?>
             <div class="card card-custom" style="width: 18rem;">
               <div class="card-body">
-                <a href="bacapuisi.html">
-                <h3 class="card-title">Doa</h3>
+                <a href="bacapuisi.php?id=<?= $poetry['id']?>">
+                <h3 class="card-title"><?= $poetry['judul']; ?></h3>
                 <div class="category-line-custom"></div>
                 <div class="keteranganCard-custom">
-                <h6 class="card-subtitle mb-2">Kategori: Himne</h6>
-                <h6 class="card-subtitle mb-2">Puisi dari: Chairil Anwar</h6>
-                <h6 class="card-subtitle mb-2">Lolos Moderasi pada: 20 Oktober 2022</h6>
+                <h6 class="card-subtitle mb-2">Kategori:<?= $poetry['kategori']; ?></h6>
+                <h6 class="card-subtitle mb-2">Puisi dari: <?= $poetry['nama']; ?></h6>
+                <h6 class="card-subtitle mb-2">Lolos Moderasi pada: 4 Desember 2022</h6>
               </div>
               </a>
              </div>
             </div>
-            <div class="card card-custom" style="width: 18rem;">
+          <?php if($i % 4 != 0){ ?></div><?php }?>
+          <?php endforeach; ?>
+          <?php $i++; ?>
+           <!--  <div class="card card-custom" style="width: 18rem;">
               <div class="card-body">
                 <a href="bacapuisi.html">
                   <h3 class="card-title">Doa</h3>
@@ -184,9 +200,11 @@
                   <h6 class="card-subtitle mb-2">Lolos Moderasi pada: 20 Oktober 2022</h6>
                 </div>
                </div>
-              </div>
+              </div> -->
               </div>
         </div>
+
+
         <button class="carousel-control-prev button-layout-custom-left" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
