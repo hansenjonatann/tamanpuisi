@@ -55,13 +55,43 @@
       <!-- ------------Main-------------- -->
       <section id="main-custom">
       <?php  foreach($isi as $poetry) : ?>
+        <?php 
+
+          $kategorix = "";
+              switch ($poetry['kategori']) {
+              case 1 :
+              $kategorix = "Lainnya";
+              break;
+              case 2 : 
+              $kategorix = "Balada";
+              break;
+              case 3 :
+              $kategorix = "Elegi";
+              break;
+              case 4 : 
+              $kategorix = "Epigram";
+              break;
+              case 5 : 
+              $kategorix = "Himne";
+              case 6 : 
+              $kategorix = "Ode";
+              break;
+              case 7 :
+              $kategorix = "Romansa";
+              break;
+              default :
+              $kategorix = ".";
+              break;
+        }
+
+         ?>
       <div class="container-md">
           <div class="kertas-custom opacity-0"></div>
           <div class="kertas-custom2 text-center">
                 <div class="garismerah-custom"></div>
                 <div class="garismerah-custom2"></div>
             <div class="bagian-atas-custom">
-                <h6 class="warna-kategori"><b>Kategori: <?= $poetry['kategori']; ?> </b></h6>
+                <h6 class="warna-kategori"><b>Kategori: <?= $kategorix; ?> </b></h6>
                 <h6 class="tanggal-moderasi"><b>Lolos Moderasi pada: 4 Desember 2022</b></h6>
             </div>
             <h1><b><?= $poetry['judul']; ?></b></h1>

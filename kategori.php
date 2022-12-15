@@ -143,13 +143,42 @@
         <div class="isi">
         <?php $i = 0; ?>
         <?php foreach($puisi as $poetry) : ?>
+          <?php 
+            $kategorix = "";
+              switch ($poetry['kategori']) {
+              case 1 :
+              $kategorix = "Lainnya";
+              break;
+              case 2 : 
+              $kategorix = "Balada";
+              break;
+              case 3 :
+              $kategorix = "Elegi";
+              break;
+              case 4 : 
+              $kategorix = "Epigram";
+              break;
+              case 5 : 
+              $kategorix = "Himne";
+              case 6 : 
+              $kategorix = "Ode";
+              break;
+              case 7 :
+              $kategorix = "Romansa";
+              break;
+              default :
+              $kategorix = ".";
+              break;
+  }
+
+           ?>
           <div class="card card-custom" style="width: 18rem;">
             <div class="card-body">
               <a href="bacapuisi.php?id=<?= $poetry['id']?>">
                 <h3 class="card-title"><?= $poetry['judul']; ?></h3>
                 <div class="category-line-custom"></div>
                 <div class="keteranganCard-custom">
-                  <h6 class="card-subtitle mb-2">Kategori: <?= $poetry['kategori']; ?></h6>
+                  <h6 class="card-subtitle mb-2">Kategori: <?= $kategorix; ?></h6>
                   <h6 class="card-subtitle mb-2">Puisi dari: <?= $poetry['nama']; ?></h6>
                   <h6 class="card-subtitle mb-2">Lolos Moderasi pada: 4 Desember 2022</h6>
                   <form action="bacapuisi.php" method="post">
