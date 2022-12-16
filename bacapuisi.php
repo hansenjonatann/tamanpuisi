@@ -97,26 +97,9 @@
             <h1><b><?= $poetry['judul']; ?></b></h1>
             <h6 class="penulis-custom"><b>Oleh: <?= $poetry['nama']; ?></b></h6>
             <p><?= $poetry["isi"]; ?></p>
-          <!--   <p>Tuhanku <br>
-                Dalam termangu <br>
-                Aku masih menyebut nama-Mu <br>
-                Biar susah sungguh <br>
-                Mengingat Kau penuh seluruh <br>
-                CayaMu panas suci <br>
-                Tinggal kerlip lilin di kelam sunyi <br>
-                
-                Tuhanku <br>
-                Aku hilang bentuk <br>
-                Remuk <br>
-                Tuhanku <br>
-                Aku mengembara di negeri asing <br>
-                Tuhanku <br>
-                Di pintu-Mu aku mengetuk <br>
-                Aku tidak bisa berpaling</p> -->
           </div>
     </div>
   <?php endforeach; ?>
-  <!-- <?php $i//++//; ?> -->
 </section>
 
 

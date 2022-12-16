@@ -12,9 +12,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Taman Puisi | Beranda</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="shorcut icon" type="text/css" href="gambar/TAMAN PUISI.png">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="profile.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <!-- ---------------- Header ----------------- -->
@@ -45,7 +46,15 @@
               </li>
             </ul>
             <button type="button" class="btn btn-light btn-login-custom"><a href="login.php" id="login">LOGIN</a></button>
-            <button type="button" class="btn btn-info btn-signup-custom"><a href="signup.php">SIGN UP</a></button>
+              <div class="dropdown">
+                <button class="btn btn-info rounded-circle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-user"></i>
+                </button>
+                <ul class="dropdown-menu bg-info text-white">
+                  <li><a class="dropdown-item" href="edit.php">Edit Profile</a></li>
+                  <li><a class="dropdown-item" href="logout.php">Logout</a></li>
+                </ul>
+              </div>
           </div>
         </div>
       </nav>
@@ -84,10 +93,10 @@
             <div class="slide1-custom">
               <?php $i = 0; ?>
               <?php foreach($isi as $poetry) : ?>
-                <?php   if($i==0) { ?><div class="item active"><?php  } ?>
+
             <div class="card card-custom" style="width: 18rem;">
               <div class="card-body">
-                <a href="bacapuisi.php?id=<?= $poetry['id']?>">
+                <a href="bacapuisi.html">
                 <h3 class="card-title"><?= $poetry['judul']; ?></h3>
                 <div class="category-line-custom"></div>
                 <div class="keteranganCard-custom">
@@ -98,7 +107,6 @@
               </a>
              </div>
             </div>
-          <?php if($i % 4 != 0){ ?></div><?php }?>
           <?php endforeach; ?>
           <?php $i++; ?>
            <!--  <div class="card card-custom" style="width: 18rem;">

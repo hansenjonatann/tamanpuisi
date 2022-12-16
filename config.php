@@ -14,7 +14,6 @@ if(!$conn) {
 
 function query($query) {
     global $conn;
-    // $id = $_GET['id'];
     $result = mysqli_query($conn, $query);
     $poetrys = [];
     while($poetry = mysqli_fetch_assoc($result)) {
