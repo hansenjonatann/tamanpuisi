@@ -86,12 +86,6 @@
       <div class="container-md">
       <h1 class="sub-title-custom text-center">REKOMENDASI</h1>
       <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="true">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
- 
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="slide1-custom">
@@ -137,118 +131,8 @@
              </div>
             </div>
           <?php endforeach; ?>
-           <!--  <div class="card card-custom" style="width: 18rem;">
-              <div class="card-body">
-                <a href="bacapuisi.html">
-                  <h3 class="card-title">Doa</h3>
-                  <div class="category-line-custom"></div>
-                  <div class="keteranganCard-custom">
-                  <h6 class="card-subtitle mb-2">Kategori: Himne</h6>
-                  <h6 class="card-subtitle mb-2">Puisi dari: Chairil Anwar</h6>
-                  <h6 class="card-subtitle mb-2">Lolos Moderasi pada: 20 Oktober 2022</h6>
-                </div>
-                </a>
-             </div>
-            </div>
-            <div class="card card-custom" style="width: 18rem;">
-              <div class="card-body">
-                <a href="bacapuisi.html">
-                  <h3 class="card-title">Doa</h3>
-                  <div class="category-line-custom"></div>
-                  <div class="keteranganCard-custom">
-                  <h6 class="card-subtitle mb-2">Kategori: Himne</h6>
-                  <h6 class="card-subtitle mb-2">Puisi dari: Chairil Anwar</h6>
-                  <h6 class="card-subtitle mb-2">Lolos Moderasi pada: 20 Oktober 2022</h6>
-                </div>
-                </a>
-             </div>
-            </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="slide1-custom">
-              <div class="card card-custom" style="width: 18rem;">
-                <div class="card-body">
-                  <h3 class="card-title">Doa</h3>
-                  <div class="category-line-custom"></div>
-                  <div class="keteranganCard-custom">
-                  <h6 class="card-subtitle mb-2">Kategori: Himne</h6>
-                  <h6 class="card-subtitle mb-2">Puisi dari: Chairil Anwar</h6>
-                  <h6 class="card-subtitle mb-2">Lolos Moderasi pada: 20 Oktober 2022</h6>
-                </div>
-               </div>
-              </div>
-              <div class="card card-custom" style="width: 18rem;">
-                <div class="card-body">
-                  <h3 class="card-title">Doa</h3>
-                  <div class="category-line-custom"></div>
-                  <div class="keteranganCard-custom">
-                  <h6 class="card-subtitle mb-2">Kategori: Himne</h6>
-                  <h6 class="card-subtitle mb-2">Puisi dari: Chairil Anwar</h6>
-                  <h6 class="card-subtitle mb-2">Lolos Moderasi pada: 20 Oktober 2022</h6>
-                </div>
-               </div>
-              </div>
-              <div class="card card-custom" style="width: 18rem;">
-                <div class="card-body">
-                  <h3 class="card-title">Doa</h3>
-                  <div class="category-line-custom"></div>
-                  <div class="keteranganCard-custom">
-                  <h6 class="card-subtitle mb-2">Kategori: Himne</h6>
-                  <h6 class="card-subtitle mb-2">Puisi dari: Chairil Anwar</h6>
-                  <h6 class="card-subtitle mb-2">Lolos Moderasi pada: 20 Oktober 2022</h6>
-                </div>
-               </div>
-              </div>
-              </div>
-          </div>
-          <div class="carousel-item">
-            <div class="slide1-custom">
-              <div class="card card-custom" style="width: 18rem;">
-                <div class="card-body">
-                  <h3 class="card-title">Doa</h3>
-                  <div class="category-line-custom"></div>
-                  <div class="keteranganCard-custom">
-                  <h6 class="card-subtitle mb-2">Kategori: Himne</h6>
-                  <h6 class="card-subtitle mb-2">Puisi dari: Chairil Anwar</h6>
-                  <h6 class="card-subtitle mb-2">Lolos Moderasi pada: 20 Oktober 2022</h6>
-                </div>
-               </div>
-              </div>
-              <div class="card card-custom" style="width: 18rem;">
-                <div class="card-body">
-                  <h3 class="card-title">Doa</h3>
-                  <div class="category-line-custom"></div>
-                  <div class="keteranganCard-custom">
-                  <h6 class="card-subtitle mb-2">Kategori: Himne</h6>
-                  <h6 class="card-subtitle mb-2">Puisi dari: Chairil Anwar</h6>
-                  <h6 class="card-subtitle mb-2">Lolos Moderasi pada: 20 Oktober 2022</h6>
-                </div>
-               </div>
-              </div>
-              <div class="card card-custom" style="width: 18rem;">
-                <div class="card-body">
-                  <h3 class="card-title">Doa</h3>
-                  <div class="category-line-custom"></div>
-                  <div class="keteranganCard-custom">
-                  <h6 class="card-subtitle mb-2">Kategori: Himne</h6>
-                  <h6 class="card-subtitle mb-2">Puisi dari: Chairil Anwar</h6>
-                  <h6 class="card-subtitle mb-2">Lolos Moderasi pada: 20 Oktober 2022</h6>
-                </div>
-               </div>
-              </div> -->
               </div>
         </div>
-
-
-        <button class="carousel-control-prev button-layout-custom-left" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next button-layout-custom-right" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
     </div>
     </div>
     </section>
@@ -309,6 +193,7 @@
         <div class="col-md-9 card-center-custom">
           <div class="card card2-custom">
             <div class="card-body card2-body-custom">
+            <a href="bacapuisi.php?id=<?= $poetry['id']?>">
               <div class="card2-number-custom">
                 <h1><?= $poetry['id']; ?></h1>
               </div>
@@ -321,6 +206,7 @@
               <div class="card2-author-custom">
                 <p class="card-text">Kategori: <?= $kategorixx; ?></p>
               </div>
+              </a>
           </div>
         </div>
       </div>
@@ -330,173 +216,6 @@
       </div>
 </div>
 </section>
-        <!-- <div class="col-md-9 card-center-custom">
-          <div class="card card2-custom">
-            <div class="card-body card2-body-custom">
-              <div class="card2-number-custom">
-                <h1>2</h1>
-              </div>
-              <div class="card2-content-custom">
-                <h4 class="card-title">Doa</h4>
-                <div class="category-line2-custom"></div> 
-                <p class="card-text">Oleh: Chairil Anwar</p>
-
-              </div>
-              <div class="card2-author-custom">
-                <p class="card-text">Kategori: Himne</p>
-              </div>
-          </div>
-        </div>
-      </div>
-        <div class="col-md-9 card-center-custom">
-          <div class="card card2-custom">
-            <div class="card-body card2-body-custom">
-              <div class="card2-number-custom">
-                <h1>3</h1>
-              </div>
-              <div class="card2-content-custom">
-                <h4 class="card-title">Doa</h4>
-                <div class="category-line2-custom"></div> 
-                <p class="card-text">Oleh: Chairil Anwar</p>
-
-              </div>
-              <div class="card2-author-custom">
-                <p class="card-text">Kategori: Himne</p>
-              </div>
-          </div>
-        </div>
-      </div>
-        <div class="col-md-9 card-center-custom">
-          <div class="card card2-custom">
-            <div class="card-body card2-body-custom">
-              <div class="card2-number-custom">
-                <h1>4</h1>
-              </div>
-              <div class="card2-content-custom">
-                <h4 class="card-title">Doa</h4>
-                <div class="category-line2-custom"></div> 
-                <p class="card-text">Oleh: Chairil Anwar</p>
-
-              </div>
-              <div class="card2-author-custom">
-                <p class="card-text">Kategori: Himne</p>
-              </div>
-          </div>
-        </div>
-      </div>
-        <div class="col-md-9 card-center-custom">
-          <div class="card card2-custom">
-            <div class="card-body card2-body-custom">
-              <div class="card2-number-custom">
-                <h1>5</h1>
-              </div>
-              <div class="card2-content-custom">
-                <h4 class="card-title">Doa</h4>
-                <div class="category-line2-custom"></div> 
-                <p class="card-text">Oleh: Chairil Anwar</p>
-
-              </div>
-              <div class="card2-author-custom">
-                <p class="card-text">Kategori: Himne</p>
-              </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- <div class="col-md-6">
-      <h1 class="sub-title-custom  text-center responsive-margin">Puisi Terpopuler</h1>
-      <div class="col-md-9 card-center-custom">
-        <div class="card card2-custom">
-          <div class="card-body card2-body-custom">
-            <div class="card2-number-custom">
-              <h1>1</h1>
-            </div>
-            <div class="card2-content-custom">
-              <h4 class="card-title">Doa</h4>
-              <div class="category-line2-custom"></div> 
-              <p class="card-text">Oleh: Chairil Anwar</p>
-
-            </div>
-            <div class="card2-author-custom">
-              <p class="card-text">Kategori: Himne</p>
-            </div>
-        </div>
-      </div>
-    </div>
-      <div class="col-md-9 card-center-custom">
-        <div class="card card2-custom">
-          <div class="card-body card2-body-custom">
-            <div class="card2-number-custom">
-              <h1>2</h1>
-            </div>
-            <div class="card2-content-custom">
-              <h4 class="card-title">Doa</h4>
-              <div class="category-line2-custom"></div> 
-              <p class="card-text">Oleh: Chairil Anwar</p>
-
-            </div>
-            <div class="card2-author-custom">
-              <p class="card-text">Kategori: Himne</p>
-            </div>
-        </div>
-      </div>
-    </div>
-      <div class="col-md-9 card-center-custom">
-        <div class="card card2-custom">
-          <div class="card-body card2-body-custom">
-            <div class="card2-number-custom">
-              <h1>3</h1>
-            </div>
-            <div class="card2-content-custom">
-              <h4 class="card-title">Doa</h4>
-              <div class="category-line2-custom"></div> 
-              <p class="card-text">Oleh: Chairil Anwar</p>
-
-            </div>
-            <div class="card2-author-custom">
-              <p class="card-text">Kategori: Himne</p>
-            </div>
-        </div>
-      </div>
-    </div>
-      <div class="col-md-9 card-center-custom">
-        <div class="card card2-custom">
-          <div class="card-body card2-body-custom">
-            <div class="card2-number-custom">
-              <h1>4</h1>
-            </div>
-            <div class="card2-content-custom">
-              <h4 class="card-title">Doa</h4>
-              <div class="category-line2-custom"></div> 
-              <p class="card-text">Oleh: Chairil Anwar</p>
-
-            </div>
-            <div class="card2-author-custom">
-              <p class="card-text">Kategori: Himne</p>
-            </div>
-        </div>
-      </div>
-    </div>
-      <div class="col-md-9 card-center-custom">
-        <div class="card card2-custom">
-          <div class="card-body card2-body-custom">
-            <div class="card2-number-custom">
-              <h1>5</h1>
-            </div>
-            <div class="card2-content-custom">
-              <h4 class="card-title">Doa</h4>
-              <div class="category-line2-custom"></div> 
-              <p class="card-text">Oleh: Chairil Anwar</p>
-
-            </div>
-            <div class="card2-author-custom">
-              <p class="card-text">Kategori: Himne</p>
-            </div>
-        </div>
-      </div>
-    </div>
-  </div>
-    </div> -->
 
 <!-- --------------Footer-------------->
 <footer>

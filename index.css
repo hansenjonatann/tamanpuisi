@@ -219,7 +219,7 @@ input {
   cursor: pointer;
 }
 
-.card2-body-custom {
+.card2-body-custom a {
   display: flex;
   padding: 0 !important;
 }
@@ -341,5 +341,10 @@ div.footer-copyright-custom {
   /* button login and sign up */
   .btn-login-custom {
     padding-left: 20px !important;
+  }
+
+  /* Card Rekomendasi */
+  .slide1-custom {
+    display: block !important;
   }
 }
