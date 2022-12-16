@@ -54,7 +54,7 @@ form button.search-btn-custom {
   border-radius: 0 !important;
   padding: 6px 13px !important;
   font-size: 20px !important;
-  margin-right: 20px;
+  margin-right: 100px;
 }
 
 .btn-login-custom {
@@ -143,7 +143,7 @@ form button.search-btn-custom {
 .isi h3 {
   text-align: center;
   margin-top: 15px;
-font-size: 25px;
+  font-size: 25px;
 }
 
 .category-line-custom {
@@ -230,6 +230,6 @@ div.footer-copyright-custom {
   }
 
   .judul h1 {
-  padding: 10px 40px;
-}
+    padding: 10px 40px;
+  }
 }
