@@ -81,13 +81,15 @@
     <div class="kotak_signup">
         <p class="tulisan_signup">signup</p>
 
-        <form action="" method="post">
+        <form action="" method="post" enctype="multipart/form-data">
             <label for ="username">Username : </label>
             <input type="text" name="username" id="username" class="form_signup" placeholder="Buat Username atau Email Anda..." required>
             <label for ="password">Password : </label>
              <input type="password" name="password" id="password" class="form_signup" placeholder="Buat Kata Sandi Anda..."  required >
              <label for ="cpassword">Konfirmasi Password: </label>
                <input type="password" name="cpassword" id="cpassword" class="form_signup" placeholder="Masukkan Kembali Kata Sandi Anda..." >
+               <label for ="gambar">Gambar : </label>
+               <input type="file" name="gambar" id="gambar" class="form_signup" > 
              <button type="submit" class="tombol_signup" name="signup">SIGNUP</button>   
 
              <br>

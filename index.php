@@ -3,6 +3,7 @@
   require 'config.php';
   $isi = query("SELECT * FROM kirimpuisi LIMIT 3");
   $isi2 = query("SELECT * FROM kirimpuisi LIMIT 5");
+  $users = query("SELECT * FROM users");
 
 ?>
 
@@ -49,7 +50,9 @@
             <button type="button" class="btn btn-light btn-login-custom"><a href="login.php" id="login">LOGIN</a></button>
               <div class="dropdown">
                 <button class="btn btn-info rounded-circle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="fa-solid fa-user"></i>
+                  <?php foreach($users as $user) : ?>
+                  <img src="users/<?= $user['gambar']; ?>">
+                <?php endforeach; ?>
                 </button>
                 <ul class="dropdown-menu bg-info text-white">
                   <li><a class="dropdown-item" href="edit2.php">Edit Profil</a></li>
@@ -91,24 +94,50 @@
  
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <div class="slide1-custom">
               <?php $i = 0; ?>
+            <div class="slide1-custom">
               <?php foreach($isi as $poetry) : ?>
+                <?php 
+               $kategorix = "";
+              switch ($poetry['kategori']) {
+              case 1 :
+              $kategorix = "Lainnya";
+              break;
+              case 2 : 
+              $kategorix = "Balada";
+              break;
+              case 3 :
+              $kategorix = "Elegi";
+              break;
+              case 4 : 
+              $kategorix = "Epigram";
+              break;
+              case 5 : 
+              $kategorix = "Himne";
+              case 6 : 
+              $kategorix = "Ode";
+              break;
+              case 7 :
+              $kategorix = "Romansa";
+              break;
+              default :
+              $kategorix = ".";
+              break;
+  } ?>
             <div class="card card-custom" style="width: 18rem;">
               <div class="card-body">
-                <a href="bacapuisi.html">
+                <a href="bacapuisi.php?=id<?= $poetry['id']?>">
                 <h3 class="card-title"><?= $poetry['judul']; ?></h3>
                 <div class="category-line-custom"></div>
                 <div class="keteranganCard-custom">
-                <h6 class="card-subtitle mb-2">Kategori:<?= $poetry['kategori']; ?></h6>
+                <h6 class="card-subtitle mb-2">Kategori:<?= $kategorix; ?></h6>
                 <h6 class="card-subtitle mb-2">Puisi dari: <?= $poetry['nama']; ?></h6>
-                <h6 class="card-subtitle mb-2">Lolos Moderasi pada: 4 Desember 2022</h6>
+                <h6 class="card-subtitle mb-2">Lolos Moderasi pada: <?php echo date('d-M-Y'); ?></h6>
               </div>
               </a>
              </div>
             </div>
           <?php endforeach; ?>
-          <?php $i++; ?>
            <!--  <div class="card card-custom" style="width: 18rem;">
               <div class="card-body">
                 <a href="bacapuisi.html">
@@ -210,6 +239,7 @@
                </div>
               </div> -->
               </div>
+              <? $i++; ?>
         </div>
 
 
@@ -250,11 +280,39 @@
       <h1 class="sub-title-custom  text-center">Puisi Terbaru</h1>
       <?php $i = 0; ?>
             <?php foreach($isi2 as $poetry) : ?>
+                   <?php 
+               $kategorixx = "";
+              switch ($poetry['kategori']) {
+              case 1 :
+              $kategorixx = "Lainnya";
+              break;
+              case 2 : 
+              $kategorixx = "Balada";
+              break;
+              case 3 :
+              $kategorixx = "Elegi";
+              break;
+              case 4 : 
+              $kategorixx = "Epigram";
+              break;
+              case 5 : 
+              $kategorixx = "Himne";
+              case 6 : 
+              $kategorixx = "Ode";
+              break;
+              case 7 :
+              $kategorixx = "Romansa";
+              break;
+              default :
+              $kategorixx = ".";
+              break;
+  } ?>
+
         <div class="col-md-9 card-center-custom">
           <div class="card card2-custom">
             <div class="card-body card2-body-custom">
               <div class="card2-number-custom">
-                <h1>1</h1>
+                <h1><?= $poetry['id']; ?></h1>
               </div>
               <div class="card2-content-custom">
                 <h4 class="card-title"><?= $poetry['judul']; ?></h4>
@@ -263,7 +321,7 @@
 
               </div>
               <div class="card2-author-custom">
-                <p class="card-text">Kategori: <?= $poetry['kategori']; ?></p>
+                <p class="card-text">Kategori: <?= $kategorixx; ?></p>
               </div>
           </div>
         </div>

@@ -92,7 +92,7 @@
                 <div class="garismerah-custom2"></div>
             <div class="bagian-atas-custom">
                 <h6 class="warna-kategori"><b>Kategori: <?= $kategorix; ?> </b></h6>
-                <h6 class="tanggal-moderasi"><b>Lolos Moderasi pada: 4 Desember 2022</b></h6>
+                <h6 class="tanggal-moderasi"><b>Lolos Moderasi pada: <?php echo date('d F Y') ?></b></h6>
             </div>
             <h1><b><?= $poetry['judul']; ?></b></h1>
             <h6 class="penulis-custom"><b>Oleh: <?= $poetry['nama']; ?></b></h6>

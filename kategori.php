@@ -2,7 +2,10 @@
 
   require 'config.php';
   $puisi = query("SELECT * FROM kirimpuisi");
+  $jumlah = count($puisi);
 
+  $timestamp = date('Y-m-d G:i:s');
+  
 
 
   // $puisi = query("SELECT kirimpuisi.*, kategori.nama as kategori_nama FROM kirimpuisi  JOIN kategori ON kategori.id = kirimpuisi.kategori_id");
@@ -139,6 +142,7 @@
       <div class="container-md">
         <div class="judul">
           <h1 class="text-center">DAFTAR PUISI</h1>
+          <h3 class="text-center mt-3">Total Puisi : <?= $jumlah; ?></h3>
         </div>
         <div class="isi">
         <?php $i = 0; ?>
@@ -178,7 +182,7 @@
                 <div class="keteranganCard-custom">
                   <h6 class="card-subtitle mb-2">Kategori: <?= $kategorix; ?></h6>
                   <h6 class="card-subtitle mb-2">Puisi dari: <?= $poetry['nama']; ?></h6>
-                  <h6 class="card-subtitle mb-2">Lolos Moderasi pada: 4 Desember 2022</h6>
+                  <h6 class="card-subtitle mb-2">Lolos Moderasi pada: <?php echo date('d-M-Y')  ?></h6>
                   <form action="bacapuisi.php" method="post">
                   </form>
                 </div>

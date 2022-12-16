@@ -1,3 +1,39 @@
+<?php 
+
+  require 'config.php';
+
+  // ambil data di url
+
+  // query data berdasarkan id
+  $edit = mysqli_query($conn,"SELECT * FROM users");
+  // cek apakah tombol ubah sudah dipencet atau belum
+  if(isset($_POST['editted']) ) {
+
+
+
+    // cek apakah data berhasil diubah atau tidak
+    if(ubah($_POST) > 0) {
+    echo "
+          <script>
+          alert('data berhasil diubah!');
+          document.location.href = 'index.php';
+          </script>
+          ";
+  } else {
+    echo "
+          <script>
+            alert('data gagal diubah');
+            document.location.href = 'edit2.php';
+          </script>
+          ";
+      }   
+  }
+
+
+ ?>
+
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -30,28 +66,34 @@
             <div class="card text-center p-5">
               <div class="card-body">
                 
-            <img src="https://wallpapercave.com/wp/wp9566480.png" alt="profil" class="img img-thumbnail w-50 rounded-circle">
+            <?php while($data = mysqli_fetch_array($edit)) :  ?>
+            <img src="users/<?= $data['gambar']; ?>" alt="profil" class="img img-thumbnail w-50 rounded-circle">
+            <h2><?= $data['username']; ?></h2>
 
-            <h2>Nama Pengguna</h2>
+            
 
-            <p class="card-text text-muted">
-              Web Developer di hansenjonatann.githubio dan content creator di youtube HJ Codin
+            <form action="" method="post" enctype="multipart/form-data">
+              <p class="card-text text-muted">
+              <input type="text" name="bio" placeholder="Bio" class="form-control" >
             </p>
-
-            <form>
+              <input type="hidden" name="id" value="<?= $data['id']; ?>">
+              <input type="hidden" name="id" value="<?= $data['id']; ?>">
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Ubah Nama</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="username" value="<?= $data['username']; ?>">
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Ubah Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <input type="password" class="form-control" id="exampleInputPassword1" name="password">
                 </div>
                 <div class="mb-3">
-                    <label for="formFile" class="form-label">Ubah Gambar Profil</label>
-                    <input class="form-control" type="file" id="formFile">
+                    <label for="formFile" class="form-label">Ubah Gambar Profil</label><br>
+                    <img src="users/<?= $data['gambar']; ?>"><br>
+                    <input class="form-control" type="file" id="formFile" name="gambar">
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+              <?php endwhile; ?>
+                <button type="submit" class="btn btn-primary" name="editted">Ubah</button>
+                <a href="index.php" class="btn btn-primary">Cancel</a>
                 </form>
 
               </div>
