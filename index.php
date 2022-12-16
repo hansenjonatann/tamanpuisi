@@ -1,7 +1,7 @@
 <?php 
 
   require 'config.php';
-  $isi = query("SELECT * FROM kirimpuisi");
+  $isi = query("SELECT * FROM kirimpuisi LIMIT 3");
 
 ?>
 
@@ -51,7 +51,7 @@
                   <i class="fa-solid fa-user"></i>
                 </button>
                 <ul class="dropdown-menu bg-info text-white">
-                  <li><a class="dropdown-item" href="edit.php">Edit Profile</a></li>
+                  <li><a class="dropdown-item" href="edit2.php">Edit Profil</a></li>
                   <li><a class="dropdown-item" href="logout.php">Logout</a></li>
                 </ul>
               </div>
@@ -93,7 +93,6 @@
             <div class="slide1-custom">
               <?php $i = 0; ?>
               <?php foreach($isi as $poetry) : ?>
-
             <div class="card card-custom" style="width: 18rem;">
               <div class="card-body">
                 <a href="bacapuisi.html">
