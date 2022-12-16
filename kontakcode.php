@@ -9,5 +9,5 @@
     $submit = $_POST['submit'];
 
     mysqli_query($conn, "INSERT INTO kontakkami VALUES('$namapengguna','$email','$notelepon','$pesan','$submit')");
-
+    header("location: kontak.php");
 ?>

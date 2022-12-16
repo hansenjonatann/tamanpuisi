@@ -12,7 +12,7 @@
     $submit = $_POST['submit'];
     
     mysqli_query($conn, "INSERT INTO kirimpuisi VALUES('','$nama','$email','$hp','$judul','$kategori','$isi','$submit')");
-
+    header("location: kirim.php");
     if(isset($_POST["submit"])) {
         echo "<script>
             alert('Silahkan Login terlebih dahulu');
