@@ -3,9 +3,10 @@
   require 'config.php';
 
   // ambil data di url
+  $id = $_GET['id'];
 
   // query data berdasarkan id
-  $edit = mysqli_query($conn,"SELECT * FROM users");
+  $edit = mysqli_query($conn,"SELECT * FROM users WHERE id = $id LIMIT 1");
   // cek apakah tombol ubah sudah dipencet atau belum
   if(isset($_POST['editted']) ) {
 
@@ -67,7 +68,7 @@
               <div class="card-body">
                 
             <?php while($data = mysqli_fetch_array($edit)) :  ?>
-            <img src="users/<?= $data['gambar']; ?>" alt="profil" class="img img-thumbnail w-50 rounded-circle">
+            <img src="<?= $data['gambar']; ?> alt='profile' class='img img-thumbnail w-50 rounded-circle'">
             <h2><?= $data['username']; ?></h2>
 
             

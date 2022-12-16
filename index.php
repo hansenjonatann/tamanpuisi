@@ -2,8 +2,8 @@
 
   require 'config.php';
   $isi = query("SELECT * FROM kirimpuisi LIMIT 3");
-  $isi2 = query("SELECT * FROM kirimpuisi LIMIT 5");
-  $users = query("SELECT * FROM users");
+  $isi2 = query("SELECT * FROM kirimpuisi LIMIT 6 " );
+  $users = mysqli_query($conn,"SELECT * FROM users");
 
 ?>
 
@@ -50,9 +50,9 @@
             <button type="button" class="btn btn-light btn-login-custom"><a href="login.php" id="login">LOGIN</a></button>
               <div class="dropdown">
                 <button class="btn btn-info rounded-circle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <?php foreach($users as $user) : ?>
-                  <img src="users/<?= $user['gambar']; ?>">
-                <?php endforeach; ?>
+                  <?php while($data = mysqli_fetch_array($users) ) : ?>
+                  <img src="<?= $data['gambar']; ?>">
+                <?php endwhile; ?>
                 </button>
                 <ul class="dropdown-menu bg-info text-white">
                   <li><a class="dropdown-item" href="edit2.php">Edit Profil</a></li>
@@ -94,7 +94,6 @@
  
         <div class="carousel-inner">
           <div class="carousel-item active">
-              <?php $i = 0; ?>
             <div class="slide1-custom">
               <?php foreach($isi as $poetry) : ?>
                 <?php 
@@ -126,7 +125,7 @@
   } ?>
             <div class="card card-custom" style="width: 18rem;">
               <div class="card-body">
-                <a href="bacapuisi.php?=id<?= $poetry['id']?>">
+                <a href="bacapuisi.php?id=<?= $poetry['id']?>">
                 <h3 class="card-title"><?= $poetry['judul']; ?></h3>
                 <div class="category-line-custom"></div>
                 <div class="keteranganCard-custom">
@@ -239,7 +238,6 @@
                </div>
               </div> -->
               </div>
-              <? $i++; ?>
         </div>
 
 

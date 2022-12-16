@@ -25,6 +25,8 @@ function query($query) {
 
 function upload() {
 
+    global $conn;
+
         $namafile = $_FILES['gambar']['name'];
         $ukuranfile = $_FILES['gambar']['size'];
         $error = $_FILES['gambar']['error'];
@@ -61,7 +63,7 @@ function upload() {
     $namaFileBaru = uniqid();
     $namaFileBaru .= '.';
     $namaFileBaru .= '$extensiGambar';
-    move_uploaded_file($tmpName, 'users/ ' . $namaFileBaru);
+    move_uploaded_file($tmpName, $namaFileBaru);
 
         return $namafileBaru;
     }
@@ -73,7 +75,7 @@ function register($data) {
     $username = strtolower(stripcslashes($data["username"]));
     $password = mysqli_real_escape_string($conn,$data["password"]);
     $cpassword = mysqli_real_escape_string($conn, $data["cpassword"]);
-    $gambar = $data['gambar'];
+    $gambar = upload();
 
     // cek konfirmasi password
 

@@ -2,7 +2,7 @@
 
   require 'config.php';
   $id = $_GET['id'];
-  $isi = query("SELECT * FROM kirimpuisi WHERE id=".$id);
+  $isi = query("SELECT * FROM kirimpuisi WHERE id ='$id'");
   
 
 
