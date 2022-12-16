@@ -1,7 +1,7 @@
 <?php 
 
 	require 'config.php';
-
+	session_start();
 	if(isset($_POST["login"])) {
 
 
@@ -16,6 +16,8 @@
 			// cek password
 			$row = mysqli_fetch_assoc($result);
 			if(password_verify($password , $row["password"] ) ) {
+				$_SESSION['username'] = $username;
+				$_SESSION['id'] = $row["id"];
 				header("location: index.php");
 				exit;
 			}

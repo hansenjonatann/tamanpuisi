@@ -1,10 +1,9 @@
 <?php 
 
   require 'config.php';
-
+  session_start();
   // ambil data di url
-  $id = $_GET['id'];
-
+  $id = $_SESSION["id"];
   // query data berdasarkan id
   $edit = mysqli_query($conn,"SELECT * FROM users WHERE id = $id LIMIT 1");
   // cek apakah tombol ubah sudah dipencet atau belum

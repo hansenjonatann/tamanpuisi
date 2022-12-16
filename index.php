@@ -4,7 +4,7 @@
   $isi = query("SELECT * FROM kirimpuisi LIMIT 3");
   $isi2 = query("SELECT * FROM kirimpuisi LIMIT 6 " );
   $users = mysqli_query($conn,"SELECT * FROM users");
-
+  session_start();
 ?>
 
 
@@ -47,18 +47,20 @@
                 <a class="nav-link" href="kontak.html">KONTAK</a>
               </li>
             </ul>
-            <button type="button" class="btn btn-light btn-login-custom"><a href="login.php" id="login">LOGIN</a></button>
-              <div class="dropdown">
-                <button class="btn btn-info rounded-circle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <?php while($data = mysqli_fetch_array($users) ) : ?>
-                  <img src="<?= $data['gambar']; ?>">
-                <?php endwhile; ?>
+            <?php if(!isset($_SESSION["username"])) {?>  
+              <button type="button" class="btn btn-light btn-login-custom"><a href="login.php" id="login">LOGIN</a></button>
+              <?php } ?>
+            <?php if(isset($_SESSION["username"])) {?>  
+            <div class="dropdown">
+                <button class="btn btn-info btn-login-custom" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <?= strtoupper($_SESSION["username"]) ?>
                 </button>
                 <ul class="dropdown-menu bg-info text-white">
                   <li><a class="dropdown-item" href="edit2.php">Edit Profil</a></li>
                   <li><a class="dropdown-item" href="logout.php">Logout</a></li>
                 </ul>
               </div>
+              <?php } ?>
           </div>
         </div>
       </nav>
