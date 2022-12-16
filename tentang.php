@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   </head>
   <body>
+    <?php session_start();?>
     <!-- ---------------- Header ----------------- -->
     <header>
     <!-- --------------Navbar------------- -->
@@ -26,17 +27,30 @@
                 <a class="nav-link" href="kategori.php">BACA PUISI</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="kirim.html">KIRIM PUISI</a>
+                <a class="nav-link" href="kirim.php">KIRIM PUISI</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active-link-custom" href="#">TENTANG</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="kontak.html">KONTAK</a>
+                <a class="nav-link" href="kontak.php">KONTAK</a>
               </li>
             </ul>
-            <button type="button" class="btn btn-light btn-login-custom"><a href="login.php" id="login">LOGIN</a></button>
-            <button type="button" class="btn btn-info btn-signup-custom"><a href="signup.php">SIGN UP</a></button>
+            </ul>
+            <?php if(!isset($_SESSION["username"])) {?>  
+              <button type="button" class="btn btn-light btn-login-custom"><a href="login.php" id="login">LOGIN</a></button>
+              <?php } ?>
+            <?php if(isset($_SESSION["username"])) {?>  
+            <div class="dropdown">
+                <button class="btn btn-info btn-login-custom" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <?= strtoupper($_SESSION["username"]) ?>
+                </button>
+                <ul class="dropdown-menu bg-info text-white">
+                  <!-- <li><a class="dropdown-item" href="edit2.php">Edit Profil</a></li> -->
+                  <li><a class="dropdown-item" href="logout.php">Logout</a></li>
+                </ul>
+              </div>
+              <?php } ?>
           </div>
         </div>
       </nav>

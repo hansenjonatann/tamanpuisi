@@ -38,13 +38,13 @@
                 <a class="nav-link" href="kategori.php">BACA PUISI</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="kirim.html" >KIRIM PUISI</a>
+                <a class="nav-link " href="kirim.php" >KIRIM PUISI</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="tentang.html">TENTANG</a>
+                <a class="nav-link" href="tentang.php">TENTANG</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="kontak.html">KONTAK</a>
+                <a class="nav-link" href="kontak.php">KONTAK</a>
               </li>
             </ul>
             <?php if(!isset($_SESSION["username"])) {?>  
@@ -56,7 +56,7 @@
                   <?= strtoupper($_SESSION["username"]) ?>
                 </button>
                 <ul class="dropdown-menu bg-info text-white">
-                  <li><a class="dropdown-item" href="edit2.php">Edit Profil</a></li>
+                  <!-- <li><a class="dropdown-item" href="edit2.php">Edit Profil</a></li> -->
                   <li><a class="dropdown-item" href="logout.php">Logout</a></li>
                 </ul>
               </div>

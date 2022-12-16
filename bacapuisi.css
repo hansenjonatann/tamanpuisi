@@ -43,6 +43,33 @@ form button.search-btn-custom {
   color: #39c0de !important;
 }
 
+/* button login and signup */
+.btn-login-custom,
+.btn-signup-custom {
+  border-radius: 0 !important;
+  padding: 6px 13px !important;
+  font-size: 20px !important;
+  margin-right: 20px;
+}
+
+.btn-login-custom {
+  background-color: white !important;
+  border: none !important;
+}
+.btn-login-custom a {
+  color: rgba(0, 0, 0, 0.55) !important;
+  text-decoration: none;
+}
+
+.btn-login-custom:hover {
+  color: #39c0de !important;
+}
+
+.btn-signup-custom a {
+  color: white !important;
+  text-decoration: none;
+}
+
 /* ---------Main---------- */
 #main-custom {
   position: relative;
@@ -159,7 +186,7 @@ div.footer-copyright-custom {
   padding: 20px 0 20px 0;
 }
 
-.isipuisi{
+.isipuisi {
   text-indent: 20px;
 }
 

@@ -3,7 +3,7 @@
   require 'config.php';
   $puisi = query("SELECT * FROM kirimpuisi");
   $jumlah = count($puisi);
-
+  session_start();
   $timestamp = date('Y-m-d G:i:s');
   
 
@@ -48,21 +48,29 @@
               <a class="nav-link active-link-custom" href="#">BACA PUISI</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="kirim.html">KIRIM PUISI</a>
+              <a class="nav-link" href="kirim.php">KIRIM PUISI</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="tentang.html">TENTANG</a>
+              <a class="nav-link" href="tentang.php">TENTANG</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="kontak.html">KONTAK</a>
+              <a class="nav-link" href="kontak.php">KONTAK</a>
             </li>
           </ul>
-    <!-- <form class="d-flex" role="search">
-            <input class="form-control me-2 search-custom" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn search-btn-custom" type="submit">Search</button>
-          </form> -->
-          <button type="button" class="btn btn-light btn-login-custom"><a href="login.php" id="login">LOGIN</a></button>
-            <button type="button" class="btn btn-info btn-signup-custom"><a href="signup.php">SIGN UP</a></button>
+          <?php if(!isset($_SESSION["username"])) {?>  
+              <button type="button" class="btn btn-light btn-login-custom"><a href="login.php" id="login">LOGIN</a></button>
+              <?php } ?>
+            <?php if(isset($_SESSION["username"])) {?>  
+            <div class="dropdown">
+                <button class="btn btn-info btn-login-custom" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <?= strtoupper($_SESSION["username"]) ?>
+                </button>
+                <ul class="dropdown-menu bg-info text-white">
+                  <!-- <li><a class="dropdown-item" href="edit2.php">Edit Profil</a></li> -->
+                  <li><a class="dropdown-item" href="logout.php">Logout</a></li>
+                </ul>
+              </div>
+              <?php } ?>
         </div>
       </div>
     </nav>

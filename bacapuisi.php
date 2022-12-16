@@ -3,8 +3,7 @@
   require 'config.php';
   $id = $_GET['id'];
   $isi = query("SELECT * FROM kirimpuisi WHERE id ='$id'");
-  
-
+  session_start();
 
 
  ?>
@@ -29,25 +28,35 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5 ul-custom">
               <li class="nav-item">
-                <a class="nav-link active-link-custom" href="index.html">BERANDA</a>
+                <a class="nav-link active-link-custom" href="index.php">BERANDA</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="kategori.php">BACA PUISI</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="kirim.html">KIRIM PUISI</a>
+                <a class="nav-link" href="kirim.php">KIRIM PUISI</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="tentang.html">TENTANG</a>
+                <a class="nav-link" href="tentang.php">TENTANG</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="kontak.html">KONTAK</a>
+                <a class="nav-link" href="kontak.php">KONTAK</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2 search-custom" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn search-btn-custom" type="submit">Search</button>
-            </form>
+            <?php if(!isset($_SESSION["username"])) {?>  
+              <button type="button" class="btn btn-light btn-login-custom"><a href="login.php" id="login">LOGIN</a></button>
+              <?php } ?>
+            <?php if(isset($_SESSION["username"])) {?>  
+            <div class="dropdown">
+                <button class="btn btn-info btn-login-custom" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <?= strtoupper($_SESSION["username"]) ?>
+                </button>
+                <ul class="dropdown-menu bg-info text-white">
+                  <!-- <li><a class="dropdown-item" href="edit2.php">Edit Profil</a></li> -->
+                  <li><a class="dropdown-item" href="logout.php">Logout</a></li>
+                </ul>
+              </div>
+              <?php } ?>
           </div>
         </div>
       </nav>
