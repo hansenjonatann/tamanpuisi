@@ -169,9 +169,7 @@
               default :
               $kategorix = ".";
               break;
-  }
-
-           ?>
+  } ?>
           <div class="card card-custom" style="width: 18rem;">
             <div class="card-body">
               <a href="bacapuisi.php?id=<?= $poetry['id']?>">

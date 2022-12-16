@@ -2,6 +2,7 @@
 
   require 'config.php';
   $isi = query("SELECT * FROM kirimpuisi LIMIT 3");
+  $isi2 = query("SELECT * FROM kirimpuisi LIMIT 5");
 
 ?>
 
@@ -245,8 +246,10 @@
 <section id="new-and-popular-custom">
   <div class="container-md">
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-12">
       <h1 class="sub-title-custom  text-center">Puisi Terbaru</h1>
+      <?php $i = 0; ?>
+            <?php foreach($isi2 as $poetry) : ?>
         <div class="col-md-9 card-center-custom">
           <div class="card card2-custom">
             <div class="card-body card2-body-custom">
@@ -254,18 +257,24 @@
                 <h1>1</h1>
               </div>
               <div class="card2-content-custom">
-                <h4 class="card-title">Doa</h4>
+                <h4 class="card-title"><?= $poetry['judul']; ?></h4>
                 <div class="category-line2-custom"></div> 
-                <p class="card-text">Oleh: Chairil Anwar</p>
+                <p class="card-text">Oleh: <?= $poetry['nama']; ?></p>
 
               </div>
               <div class="card2-author-custom">
-                <p class="card-text">Kategori: Himne</p>
+                <p class="card-text">Kategori: <?= $poetry['kategori']; ?></p>
               </div>
           </div>
         </div>
       </div>
-        <div class="col-md-9 card-center-custom">
+      <?php endforeach; ?>
+          <?php $i++; ?>
+      </div>
+      </div>
+</div>
+</section>
+        <!-- <div class="col-md-9 card-center-custom">
           <div class="card card2-custom">
             <div class="card-body card2-body-custom">
               <div class="card2-number-custom">
@@ -337,8 +346,8 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="col-md-6">
+    </div> -->
+    <!-- <div class="col-md-6">
       <h1 class="sub-title-custom  text-center responsive-margin">Puisi Terpopuler</h1>
       <div class="col-md-9 card-center-custom">
         <div class="card card2-custom">
@@ -431,10 +440,7 @@
       </div>
     </div>
   </div>
-    </div>
-  </div>
-</div>
-</section>
+    </div> -->
 
 <!-- --------------Footer-------------->
 <footer>
